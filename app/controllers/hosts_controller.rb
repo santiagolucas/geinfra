@@ -43,7 +43,7 @@ class HostsController < ApplicationController
 
     respond_to do |format|
       if @host.save
-        format.html { redirect_to @host, notice: 'Host criado com sucesso' }
+        format.html { redirect_to @host, notice: 'Host criado com sucesso!!' }
         format.json { render :show, status: :created, location: @host }
       else
         format.html { render :new }
@@ -84,6 +84,6 @@ class HostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def host_params
-      params.require(:host).permit(:mac, :nome, :descricao, :ativo)
+      params.require(:host).permit(:mac, :nome, :descricao, :ativo, :validade)
     end
 end

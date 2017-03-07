@@ -33542,3 +33542,1702 @@ Processing by HostsController#index as HTML
 Completed 200 OK in 113ms (Views: 108.6ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for ::1 at 2017-03-07 13:47:29 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /Users/lucas/Desktop/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (49.2ms)
+Completed 200 OK in 701ms (Views: 650.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2017-03-07 13:47:30 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 179ms (Views: 175.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-03-07 13:47:44 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 154ms (Views: 149.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-03-07 14:18:29 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 189ms (Views: 169.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 14:18:33 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 118ms (Views: 111.4ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddValidadeToHosts (20170307171920)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "hosts" ADD "validade" datetime[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170307171920"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/hosts" for ::1 at 2017-03-07 14:21:41 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /Users/lucas/Desktop/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (50.5ms)
+Completed 200 OK in 727ms (Views: 674.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 14:23:56 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 110ms (Views: 104.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts/new" for ::1 at 2017-03-07 14:23:57 -0300
+Processing by HostsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (24.8ms)
+  Rendered hosts/new.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 124ms (Views: 117.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/hosts" for ::1 at 2017-03-07 14:24:23 -0300
+Processing by HostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f+iTKXqOOLUrynNh9tD2tSw2MPr1fZyGJ2Xq9mfD9cspf5ZxP00MgVgiS0Wr0TkKQyEg7QlFz/ZjVYpNeZJ5vQ==", "host"=>{"mac"=>"dfasdfa", "nome"=>"dfad", "descricao"=>"ddfasdfadsf", "validade"=>"2017-03-08", "ativo"=>"1"}, "commit"=>"Criar Host"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "hosts" ("mac", "nome", "descricao", "ativo", "created_at", "updated_at", "validade") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["mac", "dfasdfa"], ["nome", "dfad"], ["descricao", "ddfasdfadsf"], ["ativo", true], ["created_at", 2017-03-07 17:24:23 UTC], ["updated_at", 2017-03-07 17:24:23 UTC], ["validade", 2017-03-08 00:00:00 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/hosts/16
+Completed 302 Found in 7ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/hosts/16" for ::1 at 2017-03-07 14:24:23 -0300
+Processing by HostsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering hosts/show.html.erb within layouts/application
+  Rendered hosts/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 135ms (Views: 129.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 14:24:26 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 113ms (Views: 108.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 14:25:24 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.4ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (10.2ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_date' for nil:NilClass
+Did you mean?  to_a):
+    49:         <td><%= host.nome %></td>
+    50:         <td><%= host.descricao %></td>
+    51:         <td><%= host.ativo %></td>
+    52:         <td><%= host.validade.to_date %></td>
+    53:         <td>
+    54:           <%= link_to t('.edit', :default => t("helpers.links.edit")),
+    55:                       edit_host_path(host), :class => 'btn btn-default btn-xs' %>
+  
+app/views/hosts/index.html.erb:52:in `block in _app_views_hosts_index_html_erb__495610383297595406_70328554622240'
+app/views/hosts/index.html.erb:45:in `_app_views_hosts_index_html_erb__495610383297595406_70328554622240'
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.5ms)
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (112.5ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from call at /Users/lucas/.rvm/gems/ruby-2.3.0@global/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13)
+Started GET "/hosts" for ::1 at 2017-03-07 14:25:31 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 109ms (Views: 105.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 14:26:21 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.4ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 123ms (Views: 119.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 14:27:00 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 117ms (Views: 113.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts/new" for ::1 at 2017-03-07 14:27:02 -0300
+Processing by HostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (9.0ms)
+  Rendered hosts/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 133ms (Views: 126.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/hosts/new" for ::1 at 2017-03-07 14:30:52 -0300
+Processing by HostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (4.8ms)
+  Rendered hosts/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 122ms (Views: 118.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/hosts/new" for ::1 at 2017-03-07 14:31:17 -0300
+Processing by HostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (9.8ms)
+  Rendered hosts/new.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 147ms (Views: 141.5ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" ORDER BY "hosts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" ORDER BY "hosts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mHost Load (6.5ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" ORDER BY "hosts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/hosts/new" for ::1 at 2017-03-07 14:47:04 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /Users/lucas/Desktop/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (31.5ms)
+  Rendered hosts/new.html.erb within layouts/application (62.3ms)
+Completed 200 OK in 762ms (Views: 701.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 14:47:07 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 197ms (Views: 189.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 14:48:17 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /Users/lucas/Desktop/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.5ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (44.0ms)
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 2.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    49:         <td><%= host.nome %></td>
+    50:         <td><%= host.descricao %></td>
+    51:         <td><%= host.ativo %></td>
+    52:         <td><%= host.validade.strftime('%H:%M') %></td>
+    53:         <td>
+    54:           <%= link_to t('.edit', :default => t("helpers.links.edit")),
+    55:                       edit_host_path(host), :class => 'btn btn-default btn-xs' %>
+  
+app/views/hosts/index.html.erb:52:in `block in _app_views_hosts_index_html_erb___3699810235739078988_70242916119540'
+app/views/hosts/index.html.erb:45:in `_app_views_hosts_index_html_erb___3699810235739078988_70242916119540'
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.5ms)
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.5ms)
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (156.4ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from call at /Users/lucas/.rvm/gems/ruby-2.3.0@global/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13)
+Started GET "/hosts" for ::1 at 2017-03-07 14:48:40 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (10.2ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    49:         <td><%= host.nome %></td>
+    50:         <td><%= host.descricao %></td>
+    51:         <td><%= host.ativo %></td>
+    52:         <td><%= host.validade.strftime('%H') %></td>
+    53:         <td>
+    54:           <%= link_to t('.edit', :default => t("helpers.links.edit")),
+    55:                       edit_host_path(host), :class => 'btn btn-default btn-xs' %>
+  
+app/views/hosts/index.html.erb:52:in `block in _app_views_hosts_index_html_erb___3699810235739078988_70242910522240'
+app/views/hosts/index.html.erb:45:in `_app_views_hosts_index_html_erb___3699810235739078988_70242910522240'
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.5ms)
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (34.0ms)
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (177.5ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from call at /Users/lucas/.rvm/gems/ruby-2.3.0@global/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13)
+Started GET "/hosts" for ::1 at 2017-03-07 14:48:51 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 99ms (Views: 95.1ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" ORDER BY "hosts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/hosts" for ::1 at 2017-03-07 14:50:41 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /Users/lucas/Desktop/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.9ms)
+
+
+  
+NoMethodError (undefined method `validade' for #<Class:0x007fc5681e5a98>
+Did you mean?  validate
+               validates):
+  
+app/controllers/hosts_controller.rb:8:in `index'
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (109.3ms)
+Started GET "/hosts" for ::1 at 2017-03-07 14:51:57 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /Users/lucas/Desktop/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.4ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 151ms (Views: 132.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 15:18:12 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 109ms (Views: 104.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 15:20:29 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 108ms (Views: 104.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 15:20:33 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 100ms (Views: 96.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 15:20:34 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 97ms (Views: 92.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 15:20:50 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /Users/lucas/Desktop/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.0ms)
+
+
+  
+NoMethodError (undefined method `validade' for #<Class:0x007fc568708368>
+Did you mean?  validate
+               validates):
+  
+app/controllers/hosts_controller.rb:8:in `index'
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (98.1ms)
+Started GET "/hosts" for ::1 at 2017-03-07 15:21:02 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /Users/lucas/Desktop/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (1.8ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" ORDER BY "hosts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 132ms (Views: 105.7ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 15:21:26 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" ORDER BY "hosts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    50:         <td><%= host.nome %></td>
+    51:         <td><%= host.descricao %></td>
+    52:         <td><%= host.ativo %></td>
+    53:         <td><%= host.validade.strftime('%H:%M') %></td>
+    54:         <td>
+    55:           <%= link_to t('.edit', :default => t("helpers.links.edit")),
+    56:                       edit_host_path(host), :class => 'btn btn-default btn-xs' %>
+  
+app/views/hosts/index.html.erb:53:in `block in _app_views_hosts_index_html_erb___3699810235739078988_70242926163900'
+app/views/hosts/index.html.erb:46:in `_app_views_hosts_index_html_erb___3699810235739078988_70242926163900'
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.6ms)
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (118.9ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from call at /Users/lucas/.rvm/gems/ruby-2.3.0@global/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13)
+Started GET "/hosts" for ::1 at 2017-03-07 17:33:40 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /Users/lucas/Desktop/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.5ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" ORDER BY "hosts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    50:         <td><%= host.nome %></td>
+    51:         <td><%= host.descricao %></td>
+    52:         <td><%= host.ativo %></td>
+    53:         <td><%= host.validade.strftime('%H:%M') %></td>
+    54:         <td>
+    55:           <%= link_to t('.edit', :default => t("helpers.links.edit")),
+    56:                       edit_host_path(host), :class => 'btn btn-default btn-xs' %>
+  
+app/views/hosts/index.html.erb:53:in `block in _app_views_hosts_index_html_erb___3699810235739078988_70242929607840'
+app/views/hosts/index.html.erb:46:in `_app_views_hosts_index_html_erb___3699810235739078988_70242929607840'
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.8ms)
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (113.2ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from call at /Users/lucas/.rvm/gems/ruby-2.3.0@global/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13)
+Started GET "/hosts" for ::1 at 2017-03-07 17:37:25 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /Users/lucas/Desktop/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" ORDER BY "hosts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (41.8ms)
+Completed 200 OK in 907ms (Views: 844.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/hosts/new" for ::1 at 2017-03-07 17:37:29 -0300
+Processing by HostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (32.3ms)
+  Rendered hosts/new.html.erb within layouts/application (36.2ms)
+Completed 200 OK in 256ms (Views: 249.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/hosts" for ::1 at 2017-03-07 17:37:39 -0300
+Processing by HostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p0sklTM2yDom5EYnKcHWDx7akRVwK18WVucK0xqGgo7x3CHNdvX8DlUMfgN0wBmwcc2BAowTDGYS12poBNcO+A==", "host"=>{"mac"=>"00", "nome"=>"testando", "descricao"=>"d", "validade"=>"", "ativo"=>"0"}, "commit"=>"Criar Host"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (9.7ms)
+  Rendered hosts/new.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 128ms (Views: 123.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/hosts" for ::1 at 2017-03-07 17:37:42 -0300
+Processing by HostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k9uzhlYpwyjEzbXB6ulN1iIlujwRBUJSn+qW8V25fxEykrj4uA9Vq3NkpmdZLrfAllCeXXpP9EakGOcGhoAjuA==", "host"=>{"mac"=>"00", "nome"=>"testando", "descricao"=>"d", "validade"=>"", "ativo"=>"0"}, "commit"=>"Criar Host"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (5.5ms)
+  Rendered hosts/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 109ms (Views: 107.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/hosts" for ::1 at 2017-03-07 17:37:47 -0300
+Processing by HostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OAqyGO4izqyFXQU4woed3ne5N3ZPFHgaAzWXLdnxueSZQ7lmAARYLzL0Fp5xQGfIw8wTFyRezg44x+baAsjlTQ==", "host"=>{"mac"=>"TESTE01", "nome"=>"testando", "descricao"=>"d", "validade"=>"", "ativo"=>"0"}, "commit"=>"Criar Host"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (4.1ms)
+  Rendered hosts/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 107ms (Views: 105.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/hosts" for ::1 at 2017-03-07 17:37:49 -0300
+Processing by HostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"va8KHAkNkokjJoOouL8gKFfV2gP31dOVEt7tNAG9ydIc5gFi5ysECpSPkA4LeNo+46D+YpyfZYEpLJzD2oSVew==", "host"=>{"mac"=>"TESTE01", "nome"=>"testando", "descricao"=>"d", "validade"=>"", "ativo"=>"0"}, "commit"=>"Criar Host"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (4.3ms)
+  Rendered hosts/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 106ms (Views: 103.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/hosts" for ::1 at 2017-03-07 17:38:20 -0300
+Processing by HostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6h5KFi95/Ae4zCivc2FeWAwY8dzDFYYVBSjlCUZj2NRLV0FowV9qhA9lOwnApqROuG3VvahfMAE+2pT+nVqEfQ==", "host"=>{"mac"=>"TESTE01", "nome"=>"testando", "descricao"=>"d", "validade"=>"2017-03-07T11:11", "ativo"=>"1"}, "commit"=>"Criar Host"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (6.1ms)
+  Rendered hosts/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 102ms (Views: 96.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/hosts" for ::1 at 2017-03-07 17:38:21 -0300
+Processing by HostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w1R2falxArtVweieA6mhjUbX+OBV5M91+OYIH/96ROZiHX0DR1eUOOJo+ziwblub8qLcgT6ueWHDFHnoJEMYTw==", "host"=>{"mac"=>"TESTE01", "nome"=>"testando", "descricao"=>"d", "validade"=>"2017-03-07T11:11:00", "ativo"=>"1"}, "commit"=>"Criar Host"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (4.3ms)
+  Rendered hosts/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 96ms (Views: 94.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/hosts" for ::1 at 2017-03-07 17:38:22 -0300
+Processing by HostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ENsyR5jxjV5eMNR6k7vndm+oRKpSnt9s+/mhYjJXAbKxkjk5dtcb3emZx9wgfB1g291gyznUaXjAC9CV6W5dGw==", "host"=>{"mac"=>"TESTE01", "nome"=>"testando", "descricao"=>"d", "validade"=>"2017-03-07T11:11:00", "ativo"=>"1"}, "commit"=>"Criar Host"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (4.3ms)
+  Rendered hosts/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 93ms (Views: 89.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 17:38:35 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /Users/lucas/Desktop/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" ORDER BY "hosts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 135ms (Views: 106.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/hosts/new" for ::1 at 2017-03-07 17:38:37 -0300
+Processing by HostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (7.4ms)
+  Rendered hosts/new.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 116ms (Views: 112.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/hosts" for ::1 at 2017-03-07 17:38:48 -0300
+Processing by HostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Sbh29KB3lL4R4NCyQhqyLRJQsUsCCs8NQtghJ9KYm3ofL3Os5bSgimII6JYfG32SfUehXP4ynH0G6EGczMkXDA==", "host"=>{"mac"=>"D", "nome"=>"D", "descricao"=>"F", "validade"=>"2017-03-07T11:11", "ativo"=>"1"}, "commit"=>"Criar Host"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (5.3ms)
+  Rendered hosts/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 117ms (Views: 114.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/hosts" for ::1 at 2017-03-07 17:38:53 -0300
+Processing by HostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GnVh7Z+uWsjlVSHSuZPLW8+EiefyjNY7Sr01ot2kPmy7PGqTcYjMS1L8MnQKVDFNe/GthpnGYC9xT0RVBp1ixQ==", "host"=>{"mac"=>"TESTE01", "nome"=>"D", "descricao"=>"F", "validade"=>"2017-03-07T11:11:00", "ativo"=>"1"}, "commit"=>"Criar Host"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (5.7ms)
+  Rendered hosts/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 118ms (Views: 115.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/hosts" for ::1 at 2017-03-07 17:38:56 -0300
+Processing by HostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H/RXXCXH1sCBEGa90bZID1A/7JIUqWe1k5+pH7oKw8K+vVwiy+FAQza5dRticbIZ5ErI83/j0aGobdjoYTOfaw==", "host"=>{"mac"=>"TESTE01", "nome"=>"D", "descricao"=>"F", "validade"=>"2017-03-07T11:11:00", "ativo"=>"1"}, "commit"=>"Criar Host"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (5.1ms)
+  Rendered hosts/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 97ms (Views: 95.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/hosts" for ::1 at 2017-03-07 17:38:57 -0300
+Processing by HostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qYSoeevGYf7iX8XbCnwaknV6Ajj/ApVcXXN+OsZ8l2wIzaMHBeD3fVX21n25u+CEwQ8mWZRII0hmgQ/NHUXLxQ==", "host"=>{"mac"=>"TESTE01", "nome"=>"D", "descricao"=>"F", "validade"=>"2017-03-07T11:11:00", "ativo"=>"1"}, "commit"=>"Criar Host"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (4.6ms)
+  Rendered hosts/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 86ms (Views: 84.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/hosts" for ::1 at 2017-03-07 17:38:58 -0300
+Processing by HostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mIh4Mt7RG3SPEhhvNtILdGSNGiQ4RE+fUGGQ/vWU3k45wXNMMPeN9zi7C8mFFfFi0Pg+RVMO+Ytrk+EJLq2C5w==", "host"=>{"mac"=>"TESTE01", "nome"=>"D", "descricao"=>"F", "validade"=>"2017-03-07T11:11:00", "ativo"=>"1"}, "commit"=>"Criar Host"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (4.0ms)
+  Rendered hosts/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 87ms (Views: 83.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-07 17:39:17 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" ORDER BY "hosts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 98ms (Views: 93.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/hosts/new" for ::1 at 2017-03-07 17:39:20 -0300
+Processing by HostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (4.0ms)
+  Rendered hosts/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 122ms (Views: 118.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/hosts/new" for ::1 at 2017-03-07 17:39:36 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /Users/lucas/Desktop/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (6.7ms)
+  Rendered hosts/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 129ms (Views: 99.1ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/hosts" for ::1 at 2017-03-07 17:39:38 -0300
+Processing by HostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sms8VfvgsDoJvpsi6fqFIU/GtDqVzHHAWHT7jstexzkTIjcrFcYmub4XiIRaPX83+7OQW/6Gx9Rjhop5EGebkA==", "host"=>{"mac"=>"", "nome"=>"", "descricao"=>"", "validade"=>"", "ativo"=>"0"}, "commit"=>"Criar Host"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (7.6ms)
+  Rendered hosts/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 109ms (Views: 102.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/hosts" for ::1 at 2017-03-07 17:39:42 -0300
+Processing by HostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wv49oUumlP2mWiW8rs7zNr6wTKRwvWieOiNfufBovxr7tzbfpYACfhHzNhodCQkgCsVoxRv33ooB0S5OK1Hjsw==", "host"=>{"mac"=>"A", "nome"=>"A", "descricao"=>"", "validade"=>"", "ativo"=>"0"}, "commit"=>"Criar Host"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "hosts" ("mac", "nome", "descricao", "ativo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["mac", "A"], ["nome", "A"], ["descricao", ""], ["ativo", false], ["created_at", 2017-03-07 20:39:42 UTC], ["updated_at", 2017-03-07 20:39:42 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/hosts/17
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/hosts/17" for ::1 at 2017-03-07 17:39:42 -0300
+Processing by HostsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  Rendering hosts/show.html.erb within layouts/application
+  Rendered hosts/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 97ms (Views: 92.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/hosts/17/edit" for ::1 at 2017-03-07 17:39:44 -0300
+Processing by HostsController#edit as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  Rendering hosts/edit.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (5.5ms)
+  Rendered hosts/edit.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 101ms (Views: 95.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 17:39:45 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" ORDER BY "hosts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `strftime' for nil:NilClass):
+  
+app/controllers/hosts_controller.rb:8:in `index'
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (112.1ms)
+Started GET "/hosts" for ::1 at 2017-03-07 17:40:10 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /Users/lucas/Desktop/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 126ms (Views: 109.5ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/hosts/17" for ::1 at 2017-03-07 17:40:14 -0300
+Processing by HostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wyw8o/EjnWFBKfFpHqRHHXGytHm+JRDxjbPPld9qhHBiZTfdHwUL4vaA4s+tY70LxceQGNVvpuW2Qb5iBFPY2Q==", "id"=>"17"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "hosts" WHERE "hosts"."id" = ?[0m  [["id", 17]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/hosts
+Completed 302 Found in 6ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 17:40:14 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 118ms (Views: 113.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/hosts/new" for ::1 at 2017-03-07 17:40:15 -0300
+Processing by HostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (7.3ms)
+  Rendered hosts/new.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 109ms (Views: 106.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/hosts/new" for ::1 at 2017-03-07 17:45:57 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /Users/lucas/Desktop/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (5.0ms)
+  Rendered hosts/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 132ms (Views: 104.5ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/hosts" for ::1 at 2017-03-07 17:47:16 -0300
+Processing by HostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1a+lmjcQ/Y8M1Z6p87gLA2Lg1nM9yCxmA6rjjBu3DP905q7k2TZrDLt8jQ9Af/EV1pXyElaCmnI4WJJ7wI5QVg==", "host"=>{"mac"=>"001487547", "nome"=>"DKDJ", "descricao"=>"", "validade"=>"2017-03-07T10:00", "ativo"=>"1"}, "commit"=>"Criar Host"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "hosts" ("mac", "nome", "descricao", "ativo", "created_at", "updated_at", "validade") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["mac", "001487547"], ["nome", "DKDJ"], ["descricao", ""], ["ativo", true], ["created_at", 2017-03-07 20:47:16 UTC], ["updated_at", 2017-03-07 20:47:16 UTC], ["validade", 2017-03-07 10:00:00 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/hosts/18
+Completed 302 Found in 8ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/hosts/18" for ::1 at 2017-03-07 17:47:16 -0300
+Processing by HostsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering hosts/show.html.erb within layouts/application
+  Rendered hosts/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 102ms (Views: 97.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 17:47:18 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 99ms (Views: 96.1ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mHost Load (0.6ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" ORDER BY "hosts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mHost Load (0.4ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" ORDER BY "hosts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" ORDER BY "hosts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" ORDER BY "hosts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/hosts" for ::1 at 2017-03-07 17:53:41 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 138ms (Views: 134.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 17:55:26 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (comparison of Date with nil failed):
+    43:   </thead>
+    44:   <tbody>
+    45:     <% @hosts.each do |host| %>
+    46:     <% if Date.today > host.validade 
+    47:           alerta == "Prazo de validade expirado !"
+    48:         else
+    49:           alerta == "Válido !"
+  
+app/views/hosts/index.html.erb:46:in `>'
+app/views/hosts/index.html.erb:46:in `block in _app_views_hosts_index_html_erb__4485493183855815749_70219050965340'
+app/views/hosts/index.html.erb:45:in `_app_views_hosts_index_html_erb__4485493183855815749_70219050965340'
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.9ms)
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (111.9ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from call at /Users/lucas/.rvm/gems/ruby-2.3.0@global/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13)
+Started GET "/hosts" for ::1 at 2017-03-07 17:55:47 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 101ms (Views: 97.7ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/hosts/1" for ::1 at 2017-03-07 17:55:50 -0300
+Processing by HostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iiPkOwHMlnvo5aW0ZnadkSd+JlU3NZvjZ/xInpW+7TMrau9F7+oA+F9MthLVsWeHkwsCNFx/LfdcDjlpToexmg==", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "hosts" WHERE "hosts"."id" = ?[0m  [["id", 1]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/hosts
+Completed 302 Found in 7ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 17:55:50 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 95ms (Views: 90.7ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/hosts/3" for ::1 at 2017-03-07 17:55:52 -0300
+Processing by HostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JVT+7k9exBQUu1ng8Fv1Ku+rtE0D0mmIT9rkqHHB1OyEHfWQoXhSl6MSSkZDnA88W96QLGiY35x0KJVfqviIRQ==", "id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "hosts" WHERE "hosts"."id" = ?[0m  [["id", 3]]
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/hosts
+Completed 302 Found in 8ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 17:55:52 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 100ms (Views: 96.4ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/hosts/15" for ::1 at 2017-03-07 17:55:54 -0300
+Processing by HostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Bj8OcGNm8peJYaNuhIAgsOdvgSGqggxgm1k8sfcsbaCndgUOjUBkFD7IsMg3R9qmUxqlQMHIunSgq01GLBUxCQ==", "id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "hosts" WHERE "hosts"."id" = ?[0m  [["id", 15]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/hosts
+Completed 302 Found in 6ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 17:55:54 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 104ms (Views: 100.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 17:55:57 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (189.1ms)
+Completed 500 Internal Server Error in 200ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `alerta' for #<#<Class:0x007fba4d233f20>:0x007fba44224b28>
+Did you mean?  alert):
+    46:     <% if Date.today > host.validade 
+    47:           alerta == "Prazo de validade expirado !"
+    48:         else
+    49:           alerta == "Válido !"
+    50:           end %>
+    51:       <tr>
+    52:         <td><%= link_to host.id, host_path(host),class: 'btn btn-default btn-xs'%></td>
+  
+app/views/hosts/index.html.erb:49:in `block in _app_views_hosts_index_html_erb__4485493183855815749_70218991874260'
+app/views/hosts/index.html.erb:45:in `_app_views_hosts_index_html_erb__4485493183855815749_70218991874260'
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.1ms)
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (113.2ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from call at /Users/lucas/.rvm/gems/ruby-2.3.0@global/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13)
+Started GET "/hosts" for ::1 at 2017-03-07 17:56:11 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 108ms (Views: 104.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 17:56:32 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 133ms (Views: 129.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 17:56:34 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 110ms (Views: 105.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 17:56:35 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 100ms (Views: 95.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 17:57:18 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 102ms (Views: 97.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 17:57:58 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.4ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 120ms (Views: 116.5ms | ActiveRecord: 0.6ms)
+
+
+  [1m[36mHost Load (0.5ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" ORDER BY "hosts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/hosts" for ::1 at 2017-03-07 18:21:25 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 117ms (Views: 111.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:21:27 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 102ms (Views: 98.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:21:39 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 96ms (Views: 92.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:22:01 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 98ms (Views: 93.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:22:02 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 102ms (Views: 98.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:22:07 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 84ms (Views: 80.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:22:11 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 99ms (Views: 95.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts/new" for ::1 at 2017-03-07 18:22:15 -0300
+Processing by HostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (5.8ms)
+  Rendered hosts/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 127ms (Views: 121.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/hosts" for ::1 at 2017-03-07 18:22:29 -0300
+Processing by HostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QKHLUY/63Z5+bheQ2P/wwde84V1a9rPWNujsfvFBfz0WNs4Jyjnpqg2GL7SF/j9+uKvxSqbO4KZy2IzF7xDzSw==", "host"=>{"mac"=>"ASDF", "nome"=>"DD", "descricao"=>"DFADSF", "validade"=>"2017-02-06T13:21", "ativo"=>"1"}, "commit"=>"Criar Host"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "hosts" ("mac", "nome", "descricao", "ativo", "created_at", "updated_at", "validade") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["mac", "ASDF"], ["nome", "DD"], ["descricao", "DFADSF"], ["ativo", true], ["created_at", 2017-03-07 21:22:29 UTC], ["updated_at", 2017-03-07 21:22:29 UTC], ["validade", 2017-02-06 13:21:00 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/hosts/19
+Completed 302 Found in 10ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/hosts/19" for ::1 at 2017-03-07 18:22:29 -0300
+Processing by HostsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendering hosts/show.html.erb within layouts/application
+  Rendered hosts/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 106ms (Views: 102.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:22:30 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 115ms (Views: 111.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2017-03-07 18:22:37 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:UsersController> at /Users/lucas/Desktop/geinfra/app/controllers/users_controller.rb:2)
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (nome like '%%' )[0m
+  Rendered users/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 109ms (Views: 103.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/redes" for ::1 at 2017-03-07 18:22:37 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:RedesController> at /Users/lucas/Desktop/geinfra/app/controllers/redes_controller.rb:2)
+Processing by RedesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering redes/index.html.erb within layouts/application
+  [1m[36mRede Load (0.2ms)[0m  [1m[34mSELECT "redes".* FROM "redes" WHERE (nome like '%%' )[0m
+  Rendered redes/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 120ms (Views: 111.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:22:48 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 103ms (Views: 98.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:23:00 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 83ms (Views: 80.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:23:53 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 120ms (Views: 116.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:24:03 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 95ms (Views: 91.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:24:21 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 90ms (Views: 86.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:24:30 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 93ms (Views: 89.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:24:45 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 100ms (Views: 96.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:25:13 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 104ms (Views: 100.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:26:03 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 109ms (Views: 103.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:26:13 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 106ms (Views: 102.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:26:26 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 96ms (Views: 92.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:26:44 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 93ms (Views: 89.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:27:38 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (8.8ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `today' for Time:Class):
+    44:   </thead>
+    45:   <tbody>
+    46:     <% @hosts.each do |host| %>
+    47:     <% if Time.today > host.validade 
+    48:           @alerta = "Prazo de validade expirado !"
+    49:         else
+    50:           @alerta = "Válido !"
+  
+app/views/hosts/index.html.erb:47:in `block in _app_views_hosts_index_html_erb__4485493183855815749_70219040921160'
+app/views/hosts/index.html.erb:46:in `_app_views_hosts_index_html_erb__4485493183855815749_70219040921160'
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.3ms)
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (121.7ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from call at /Users/lucas/.rvm/gems/ruby-2.3.0@global/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13)
+Started GET "/hosts" for ::1 at 2017-03-07 18:27:44 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 97ms (Views: 93.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts/new" for ::1 at 2017-03-07 18:27:54 -0300
+Processing by HostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (4.4ms)
+  Rendered hosts/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 117ms (Views: 113.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/hosts" for ::1 at 2017-03-07 18:28:09 -0300
+Processing by HostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8sv1nUiz4vRwN0K0tNHFJQvyUidPCzQ1ff/1T3HRdxikXPDFDXDWwAPfepDp0AqaZOVCMLMzZ0U5z5X0b4D7bg==", "host"=>{"mac"=>"DAFADFDFADSFDFA", "nome"=>"dfaDFADSFASDF", "descricao"=>"FADSFASDFADSFASDF", "validade"=>"2017-03-07T18:27", "ativo"=>"1"}, "commit"=>"Criar Host"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "hosts" ("mac", "nome", "descricao", "ativo", "created_at", "updated_at", "validade") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["mac", "DAFADFDFADSFDFA"], ["nome", "dfaDFADSFASDF"], ["descricao", "FADSFASDFADSFASDF"], ["ativo", true], ["created_at", 2017-03-07 21:28:09 UTC], ["updated_at", 2017-03-07 21:28:09 UTC], ["validade", 2017-03-07 18:27:00 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/hosts/20
+Completed 302 Found in 7ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/hosts/20" for ::1 at 2017-03-07 18:28:09 -0300
+Processing by HostsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering hosts/show.html.erb within layouts/application
+  Rendered hosts/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 93ms (Views: 89.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:28:10 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 107ms (Views: 103.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/hosts/20/edit" for ::1 at 2017-03-07 18:28:13 -0300
+Processing by HostsController#edit as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering hosts/edit.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (4.9ms)
+  Rendered hosts/edit.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 109ms (Views: 102.7ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/hosts/20" for ::1 at 2017-03-07 18:28:17 -0300
+Processing by HostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AqFiwXX8GmRZr7sZUsjZS8opm0Cgw/kuzxlR+L74bMgZtvDFz10cmxW5nIvBUas7NwJc0O7gEu8o14J4KbxeWA==", "host"=>{"mac"=>"DAFADFDFADSFDFA", "nome"=>"dfaDFADSFASDF", "descricao"=>"FADSFASDFADSFASDF", "validade"=>"2017-03-07T18:29", "ativo"=>"1"}, "commit"=>"Atualizar Host", "id"=>"20"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "hosts" SET "validade" = ?, "updated_at" = ? WHERE "hosts"."id" = ?[0m  [["validade", 2017-03-07 18:29:00 UTC], ["updated_at", 2017-03-07 21:28:17 UTC], ["id", 20]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/hosts/20
+Completed 302 Found in 9ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/hosts/20" for ::1 at 2017-03-07 18:28:17 -0300
+Processing by HostsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering hosts/show.html.erb within layouts/application
+  Rendered hosts/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 96ms (Views: 92.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:28:18 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 106ms (Views: 102.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/hosts/20/edit" for ::1 at 2017-03-07 18:28:31 -0300
+Processing by HostsController#edit as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering hosts/edit.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (4.5ms)
+  Rendered hosts/edit.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 108ms (Views: 99.5ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/hosts/20" for ::1 at 2017-03-07 18:28:35 -0300
+Processing by HostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ly4G6Op/guLFHHjaH717EHQP9jzZT+4hXERSWZl7dbCMOZTsUN6EHYkKX0iMJAlgiSQxrJdsBeC7ioHZDj9HIA==", "host"=>{"mac"=>"DAFADFDFADSFDFA", "nome"=>"dfaDFADSFASDF", "descricao"=>"FADSFASDFADSFASDF", "validade"=>"2017-03-07T18:30", "ativo"=>"1"}, "commit"=>"Atualizar Host", "id"=>"20"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "hosts" SET "validade" = ?, "updated_at" = ? WHERE "hosts"."id" = ?[0m  [["validade", 2017-03-07 18:30:00 UTC], ["updated_at", 2017-03-07 21:28:35 UTC], ["id", 20]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/hosts/20
+Completed 302 Found in 10ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/hosts/20" for ::1 at 2017-03-07 18:28:35 -0300
+Processing by HostsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering hosts/show.html.erb within layouts/application
+  Rendered hosts/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 93ms (Views: 89.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:28:37 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 118ms (Views: 112.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts/20/edit" for ::1 at 2017-03-07 18:28:43 -0300
+Processing by HostsController#edit as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering hosts/edit.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (5.5ms)
+  Rendered hosts/edit.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 123ms (Views: 116.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/hosts/20" for ::1 at 2017-03-07 18:28:47 -0300
+Processing by HostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P67pCjj/FtnC8RD+vH+s9gVdZtOWsWD/xv9R9iXdV90kuXsOgl4QJo7nN2wv5t6G+HahQ9iSiz4hMYJ2spllTQ==", "host"=>{"mac"=>"DAFADFDFADSFDFA", "nome"=>"dfaDFADSFASDF", "descricao"=>"FADSFASDFADSFASDF", "validade"=>"2017-03-07T20:30", "ativo"=>"1"}, "commit"=>"Atualizar Host", "id"=>"20"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "hosts" SET "validade" = ?, "updated_at" = ? WHERE "hosts"."id" = ?[0m  [["validade", 2017-03-07 20:30:00 UTC], ["updated_at", 2017-03-07 21:28:47 UTC], ["id", 20]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/hosts/20
+Completed 302 Found in 10ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/hosts/20" for ::1 at 2017-03-07 18:28:47 -0300
+Processing by HostsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering hosts/show.html.erb within layouts/application
+  Rendered hosts/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 93ms (Views: 88.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:28:49 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.4ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 103ms (Views: 99.2ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/hosts/20" for ::1 at 2017-03-07 18:28:51 -0300
+Processing by HostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"H4ub2NqRNoh7tQ05jGv3bFp7HijdkGpnZ/e77342/jq+wpCmNLegC8wcHp8/rA167g46Sbba3HNcBcoYpQ+ikw==", "id"=>"20"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "hosts" WHERE "hosts"."id" = ?[0m  [["id", 20]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/hosts
+Completed 302 Found in 6ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:28:51 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 100ms (Views: 96.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts/new" for ::1 at 2017-03-07 18:28:53 -0300
+Processing by HostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (5.3ms)
+  Rendered hosts/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 108ms (Views: 104.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/hosts" for ::1 at 2017-03-07 18:29:15 -0300
+Processing by HostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6M/WeHfxE4Dk1vjke901APTta2uF/Aa5rQQCRDRgMby+WNMgMjIntJc+wMAm3Pq/m/p7fHnEVcnpNGL/KjG9yg==", "host"=>{"mac"=>"EFASDFDFEEEEEEE", "nome"=>"EEFEFASDF", "descricao"=>"DFADFASDF", "validade"=>"2017-03-07T18:30", "ativo"=>"1"}, "commit"=>"Criar Host"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "hosts" ("mac", "nome", "descricao", "ativo", "created_at", "updated_at", "validade") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["mac", "EFASDFDFEEEEEEE"], ["nome", "EEFEFASDF"], ["descricao", "DFADFASDF"], ["ativo", true], ["created_at", 2017-03-07 21:29:15 UTC], ["updated_at", 2017-03-07 21:29:15 UTC], ["validade", 2017-03-07 18:30:00 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/hosts/21
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/hosts/21" for ::1 at 2017-03-07 18:29:15 -0300
+Processing by HostsController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  Rendering hosts/show.html.erb within layouts/application
+  Rendered hosts/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 94ms (Views: 88.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:29:17 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.6ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 113ms (Views: 107.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:30:12 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (14.4ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `status' for #<Host:0x007fba43fed8a0>):
+    59:         <td><%= host.mac %></td>
+    60:         <td><%= host.nome %></td>
+    61:         <td><%= host.descricao %></td>
+    62:         <td><%= host.status %></td>
+    63:         <td><%= host.validade.strftime("%d/%m/%Y %H:%M")%></td>
+    64:         <td><%= @alerta %></td>
+    65:         <td>
+  
+app/views/hosts/index.html.erb:62:in `block in _app_views_hosts_index_html_erb__4485493183855815749_70219009087580'
+app/views/hosts/index.html.erb:46:in `_app_views_hosts_index_html_erb__4485493183855815749_70219009087580'
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.4ms)
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/lucas/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (109.2ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from call at /Users/lucas/.rvm/gems/ruby-2.3.0@global/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13)
+Started GET "/hosts" for ::1 at 2017-03-07 18:30:23 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 101ms (Views: 96.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:30:33 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 95ms (Views: 91.2ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/hosts/21" for ::1 at 2017-03-07 18:30:36 -0300
+Processing by HostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"d932Cz1Gm7D3PSRVsKamd4rckIUykeSPwuurYtTpEDXWlP1102ANM0CUN/MDYVxhPqm05FnbUpv5GdqVD9BMnA==", "id"=>"21"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "hosts" WHERE "hosts"."id" = ?[0m  [["id", 21]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/hosts
+Completed 302 Found in 5ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:30:36 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 110ms (Views: 106.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/hosts/new" for ::1 at 2017-03-07 18:30:37 -0300
+Processing by HostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (9.1ms)
+  Rendered hosts/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 111ms (Views: 108.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/hosts" for ::1 at 2017-03-07 18:30:48 -0300
+Processing by HostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vRD0ib8Hbx9YpS4/lB3J6TGg+Qa0EAM5uHEdL9ELxVfrh/HR+sRbKytNFhvJHAZWXrfpEUgoUEn8QX2Uz1pJIQ==", "host"=>{"mac"=>"dfasdf", "nome"=>"dfasdf", "descricao"=>"dfasdfasdf", "validade"=>"2017-03-07T23:59", "ativo"=>"0"}, "commit"=>"Criar Host"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "hosts" ("mac", "nome", "descricao", "ativo", "created_at", "updated_at", "validade") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["mac", "dfasdf"], ["nome", "dfasdf"], ["descricao", "dfasdfasdf"], ["ativo", false], ["created_at", 2017-03-07 21:30:48 UTC], ["updated_at", 2017-03-07 21:30:48 UTC], ["validade", 2017-03-07 23:59:00 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/hosts/22
+Completed 302 Found in 7ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/hosts/22" for ::1 at 2017-03-07 18:30:48 -0300
+Processing by HostsController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering hosts/show.html.erb within layouts/application
+  Rendered hosts/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 107ms (Views: 104.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:30:50 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 137ms (Views: 133.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/hosts/22/edit" for ::1 at 2017-03-07 18:30:56 -0300
+Processing by HostsController#edit as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering hosts/edit.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (5.5ms)
+  Rendered hosts/edit.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 107ms (Views: 100.2ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/hosts/22" for ::1 at 2017-03-07 18:31:01 -0300
+Processing by HostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TkqBEswx+5Vi5PEbD27YgHj8oGFzBYp6CtwXdlF0UHIh1rt5U8GM5rTFUNDwuzqx0ECsdbxyiyoOlx8CmXXQIg==", "host"=>{"mac"=>"dfasdf", "nome"=>"dfasdf", "descricao"=>"dfasdfasdf", "validade"=>"2017-03-07T18:40", "ativo"=>"0"}, "commit"=>"Atualizar Host", "id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "hosts" SET "validade" = ?, "updated_at" = ? WHERE "hosts"."id" = ?[0m  [["validade", 2017-03-07 18:40:00 UTC], ["updated_at", 2017-03-07 21:31:01 UTC], ["id", 22]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/hosts/22
+Completed 302 Found in 8ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/hosts/22" for ::1 at 2017-03-07 18:31:01 -0300
+Processing by HostsController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering hosts/show.html.erb within layouts/application
+  Rendered hosts/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 98ms (Views: 95.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:31:02 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 113ms (Views: 107.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/hosts/22/edit" for ::1 at 2017-03-07 18:31:04 -0300
+Processing by HostsController#edit as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering hosts/edit.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (4.8ms)
+  Rendered hosts/edit.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 107ms (Views: 103.7ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/hosts/22" for ::1 at 2017-03-07 18:31:09 -0300
+Processing by HostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4dZ6Bcp80hZagKMs1kG9cKaH8oKwKPHy6h63lxYTUzaOSkBuVYylZYyhAucplF9BDjv+ln9f8KLuVb/j3hLTZg==", "host"=>{"mac"=>"dfasdf", "nome"=>"dfasdf", "descricao"=>"dfasdfasdf", "validade"=>"2017-03-07T19:00", "ativo"=>"0"}, "commit"=>"Atualizar Host", "id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "hosts" SET "validade" = ?, "updated_at" = ? WHERE "hosts"."id" = ?[0m  [["validade", 2017-03-07 19:00:00 UTC], ["updated_at", 2017-03-07 21:31:09 UTC], ["id", 22]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/hosts/22
+Completed 302 Found in 8ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/hosts/22" for ::1 at 2017-03-07 18:31:09 -0300
+Processing by HostsController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering hosts/show.html.erb within layouts/application
+  Rendered hosts/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 96ms (Views: 92.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:31:10 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 120ms (Views: 116.8ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/hosts/22" for ::1 at 2017-03-07 18:31:15 -0300
+Processing by HostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9Eq0oWRQUezOxtfawDqi0tRDFG3U7S77+VN/kejwA01VA7/finbHb3lvxHxz/VjEYDYwDL+nmO/CoQ5mM8lf5A==", "id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "hosts" WHERE "hosts"."id" = ?[0m  [["id", 22]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/hosts
+Completed 302 Found in 6ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/hosts" for ::1 at 2017-03-07 18:31:15 -0300
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 129ms (Views: 125.7ms | ActiveRecord: 0.3ms)
+
+

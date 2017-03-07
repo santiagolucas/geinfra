@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161023132659) do
+ActiveRecord::Schema.define(version: 20170307171920) do
 
   create_table "host_historicos", force: :cascade do |t|
     t.integer  "host_id"
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20161023132659) do
     t.boolean  "ativo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.datetime "validade"
   end
 
   create_table "redes", force: :cascade do |t|

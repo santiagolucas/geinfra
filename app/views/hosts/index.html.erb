@@ -38,16 +38,30 @@
       <th><%= model_class.human_attribute_name(:nome) %></th>
       <th><%= model_class.human_attribute_name(:descricao) %></th>
       <th><%= model_class.human_attribute_name(:ativo) %></th>
+      <th><%= model_class.human_attribute_name(:validade) %></th>
+      <th><strong>Validade</strong></th>
     </tr>
   </thead>
   <tbody>
     <% @hosts.each do |host| %>
+    <% if host.ativo = true 
+      status = "Sim"
+    else 
+      status = "Não"
+      end %>
+    <% if Time.now > host.validade 
+          @alerta = "Prazo de validade expirado !"
+        else
+          @alerta = "Válido !"
+          end %>
       <tr>
         <td><%= link_to host.id, host_path(host),class: 'btn btn-default btn-xs'%></td>
         <td><%= host.mac %></td>
         <td><%= host.nome %></td>
         <td><%= host.descricao %></td>
-        <td><%= host.ativo %></td>
+        <td><%= status %></td>
+        <td><%= host.validade.strftime("%d/%m/%Y %H:%M")%></td>
+        <td><%= @alerta %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_host_path(host), :class => 'btn btn-default btn-xs' %>
