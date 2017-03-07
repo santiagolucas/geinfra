@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  host_id: 
+  nova_situacao: false
+  novo_status: false
+  usuario_id: 
+  motivo: MyString
+  descricao: MyText
+  rede_id: 
+
+two:
+  host_id: 
+  nova_situacao: false
+  novo_status: false
+  usuario_id: 
+  motivo: MyString
+  descricao: MyText
+  rede_id: 

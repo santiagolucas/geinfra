@@ -1,0 +1,57 @@
+<%= form_for @host, :html => { :class => "form-horizontal host" } do |f| %>
+
+  <% if @host.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@host.errors.count, "error") %> - Host não pode ser salvo.</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @host.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :mac, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-8">
+      <%= f.text_field :mac, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:mac) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :nome, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-8">
+      <%= f.text_field :nome, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:nome) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :descricao, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-8">
+      <%= f.text_area :descricao, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:descricao) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :ativo, :class => 'control-label col-lg-2' %>
+    <div class="col-md-1">
+      <%= f.check_box :ativo, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:ativo) %>
+  </div>
+
+  <form class="form-inline">
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                hosts_path, :class => 'btn btn-default' %>
+    </div>
+  </div>
+  </form>
+
+<% end %>

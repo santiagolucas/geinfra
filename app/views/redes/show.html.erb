@@ -1,0 +1,29 @@
+<%- model_class = Rede -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:nome) %>:</strong></dt>
+  <dd><%= @rede.nome %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:descricao) %>:</strong></dt>
+  <dd><%= @rede.descricao %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:ativa) %>:</strong></dt>
+  <dd><%= @rede.ativa %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:controle_mac) %>:</strong></dt>
+  <dd><%= @rede.controle_mac %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:controle_usuario) %>:</strong></dt>
+  <dd><%= @rede.controle_usuario %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:grupo_ad) %>:</strong></dt>
+  <dd><%= @rede.grupo_ad %></dd>
+</dl>
+
+<%= link_to t('.back', :default => t("helpers.links.back")),
+              redes_path, :class => 'btn btn-default'  %>
+<%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_rede_path(@rede), :class => 'btn btn-default' %>
+<%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              rede_path(@rede),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>

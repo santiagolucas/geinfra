@@ -1,0 +1,67 @@
+<%= form_for @rede, :html => { :class => "form-horizontal rede" } do |f| %>
+
+  <% if @rede.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@rede.errors.count, "error") %> - Rede não pode ser salva</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @rede.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :nome, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-8">
+      <%= f.text_field :nome, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:nome) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :descricao, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-8">
+      <%= f.text_area :descricao, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:descricao) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :grupo_ad, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-8">
+      <%= f.text_field :grupo_ad, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:grupo_ad) %>
+  </div>  
+  <div class="form-group">
+      <%= f.label :ativa, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-1">
+      <%= f.check_box :ativa, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:ativa) %>
+
+    <%= f.label :controle_mac, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-1">
+      <%= f.check_box :controle_mac, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:controle_mac) %>
+
+    <%= f.label :controle_usuario, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-1">
+      <%= f.check_box :controle_usuario, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:controle_usuario) %>
+  </div>
+
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                redes_path, :class => 'btn btn-default' %>
+    </div>
+  </div>
+
+<% end %>

@@ -1,0 +1,32 @@
+.navbar-inverse .navbar-nav > li > a {
+	color: white;
+}
+.navbar-inverse .navbar-brand {
+	color:white;
+}
+
+.btn-primary {
+	color:white;
+	background-color:#17a9ff;
+}
+.table-responsive {
+	background-color:#e6eced;
+
+    margin-left:15%;
+    margin-right:15%;
+}
+.body {
+	color:black;
+}
+
+.center {
+    padding: 70px 0;
+    border: 3px solid green;
+    text-align: center;
+}
+
+.page-header {
+    width: 75%;
+    margin-left:15%;
+    margin-right:15%;
+}

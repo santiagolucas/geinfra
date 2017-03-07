@@ -1,0 +1,1 @@
+json.partial! "host_historicos/host_historico", host_historico: @host_historico

@@ -1,0 +1,35 @@
+<%- model_class = HostHistorico -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:host_id) %>:</strong></dt>
+  <dd><%= @host_historico.host_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:nova_situacao) %>:</strong></dt>
+  <dd><%= @host_historico.nova_situacao %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:novo_status) %>:</strong></dt>
+  <dd><%= @host_historico.novo_status %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:usuario_id) %>:</strong></dt>
+  <dd><%= @host_historico.usuario_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:motivo) %>:</strong></dt>
+  <dd><%= @host_historico.motivo %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:descricao) %>:</strong></dt>
+  <dd><%= @host_historico.descricao %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:rede_id) %>:</strong></dt>
+  <dd><%= @host_historico.rede_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:created_at) %>:</strong></dt>
+  <dd><%= @host_historico.created_at %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:updated_at) %>:</strong></dt>
+  <dd><%= @host_historico.updated_at %></dd>
+</dl>
+
+<%= link_to t('.back', :default => t("helpers.links.back")),
+              host_historicos_path, :class => 'btn btn-default'  %>
+<%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_host_historico_path(@host_historico), :class => 'btn btn-default' %>
+<%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              host_historico_path(@host_historico),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>

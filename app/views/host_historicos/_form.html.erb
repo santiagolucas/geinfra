@@ -1,0 +1,78 @@
+<%= form_for @host_historico, :html => { :class => "form-horizontal host_historico" } do |f| %>
+
+  <% if @host_historico.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@host_historico.errors.count, "error") %> prohibited this host_historico from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @host_historico.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+    <div class="form-group">
+      <%= f.label :motivo, :class => 'control-label col-lg-2' %>
+      <div class="col-lg-5">
+        <%= f.text_field :motivo, :class => 'form-control' %>
+      </div>
+      <%=f.error_span(:motivo) %>
+    </div>
+    <div class="form-group">
+      <%= f.label :descricao, :class => 'control-label col-lg-2' %>
+      <div class="col-lg-5">
+        <%= f.text_area :descricao, :class => 'form-control' %>
+      </div>
+      <%=f.error_span(:descricao) %>
+    </div>
+  <div class="form-group">
+    <%= f.label :host_id, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-5">
+      <%= f.collection_select :host_id, @host, :id, :mac, {}, class:"form-control" %>
+    </div>
+    <%=f.error_span(:host_id) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :user_id, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-5">
+      <%= f.collection_select :user_id, @user, :id, :nome, {}, class:"form-control" %>
+    </div>
+    <%=f.error_span(:user_id) %>
+  </div>
+   <div class="form-group">
+    <%= f.label :rede_id, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-5">
+      <%= f.collection_select :rede_id, @rede, :id, :nome, {}, class:"form-control" %>
+    </div>
+    <%=f.error_span(:rede_id) %>
+  </div>
+
+
+    <div class="form-inline">
+
+      <%= f.label :nova_situacao, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.check_box :nova_situacao, :class => 'form-control' %>
+    </div>
+      <%=f.error_span(:nova_situacao) %>
+
+
+      <%= f.label :novo_status, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.check_box :novo_status, :class => 'form-control' %>
+    </div>
+      <%=f.error_span(:novo_status) %>
+
+  </div>
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                host_historicos_path, :class => 'btn btn-default' %>
+    </div>
+  </div>
+
+<% end %>

@@ -1,0 +1,66 @@
+<%- model_class = User -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_user_path,
+            :class => 'btn btn-primary' %>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pesquisaModal">Pesquisar</button> 
+</div>
+<div class="modal fade" id="pesquisaModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Buscar</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-inline">
+             <%= form_tag(users_path, method: :get) do %>
+             <%= text_field_tag "search", nil, placeholder: "Buscar NOME", :class => 'form-control' %>
+             <%= submit_tag "Search", :class => 'btn btn-default' %>
+             <% end %>
+          </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+
+<div class="table-responsive">
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:login) %></th>
+      <th><%= model_class.human_attribute_name(:nome) %></th>
+      <th><%= model_class.human_attribute_name(:situacao) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= button_to user.id, users_path(user), :class => "btn btn-default btn-xs" %></td>
+        <td><%= user.login %></td>
+        <td><%= user.nome %></td>
+        <td><%= user.situacao %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_user_path(user), :class => 'btn btn-default btn-xs' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      user_path(user),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-xs btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>

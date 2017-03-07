@@ -1,0 +1,2 @@
+json.extract! host_historico, :id, :host_id, :nova_situacao, :novo_status, :usuario_id, :motivo, :descricao, :rede_id, :created_at, :updated_at
+json.url host_historico_url(host_historico, format: :json)

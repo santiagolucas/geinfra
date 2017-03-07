@@ -1,0 +1,70 @@
+<%- model_class = Rede -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_rede_path,
+            :class => 'btn btn-primary' %>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pesquisaModal">Pesquisar</button>
+</div>
+<div class="modal fade" id="pesquisaModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Buscar</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-inline">
+             <%= form_tag(redes_path, method: :get) do %>
+             <%= text_field_tag "search", nil, placeholder: "Buscar NOME", :class => 'form-control' %>
+             <%= submit_tag "Search", :class => 'btn btn-default' %>
+             <% end %>
+          </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+<div class="table-responsive">
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:nome) %></th>
+      <th><%= model_class.human_attribute_name(:descricao) %></th>
+      <th><%= model_class.human_attribute_name(:ativa) %></th>
+      <th><%= model_class.human_attribute_name(:controle_mac) %></th>
+      <th><%= model_class.human_attribute_name(:controle_usuario) %></th>
+      <th><%= model_class.human_attribute_name(:grupo_ad) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @redes.each do |rede| %>
+      <tr>
+        <td><%= link_to rede.id, rede_path(rede),class: 'btn btn-default btn-xs' %></td>
+        <td><%= rede.nome %></td>
+        <td><%= rede.descricao %></td>
+        <td><%= rede.ativa %></td>
+        <td><%= rede.controle_mac %></td>
+        <td><%= rede.controle_usuario %></td>
+        <td><%= rede.grupo_ad %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_rede_path(rede), :class => 'btn btn-default btn-xs' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      rede_path(rede),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-xs btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>

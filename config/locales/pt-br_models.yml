@@ -1,0 +1,36 @@
+"pt-BR" :
+  activerecord:
+    models:
+      user: Usuário
+      host: Host
+      rede: Rede
+      host_historico: Histórico
+    attributes:
+      user:
+        id: "Código"
+        login: "Login"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+        situacao: "Situação"
+      host:
+        id: "Código"
+        mac: "Endereço MAC"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      rede:
+        id: "Código"
+        descricao: "Descrição"
+        controle_mac: "Controle por mac"
+        controle_usuario: "Controle por usuario"
+        grupo_ad: "Grupo"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      host_historico:
+        id: "Código"
+        login: "Login"
+        nova_situacao: "Nova situação"
+        novo_status: "Novo status"
+        user_id: "Usuário"
+        descricao: "Descrição"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"

@@ -1,0 +1,74 @@
+<%- model_class = HostHistorico -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+  <%= link_to t('.new', :default => t("helpers.links.new")),
+            new_host_historico_path,
+            :class => 'btn btn-primary' %>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pesquisaModal">Pesquisar</button> 
+</div>
+<div class="modal fade" id="pesquisaModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Buscar</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-inline">
+             <%= form_tag(host_historicos_path, method: :get) do %>
+             <%= text_field_tag "search", nil, placeholder: "Buscar ID", :class => 'form-control' %>
+             <%= submit_tag "Search", :class => 'btn btn-default' %>
+             <% end %>
+          </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+<div class="table-responsive">
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:user_id) %></th>
+      <th><%= model_class.human_attribute_name(:host_id) %></th>
+      <th><%= model_class.human_attribute_name(:rede_id) %></th>
+      <th><%= model_class.human_attribute_name(:motivo) %></th>
+      <th><%= model_class.human_attribute_name(:nova_situacao) %></th>
+      <th><%= model_class.human_attribute_name(:novo_status) %></th>
+      <th><%= model_class.human_attribute_name(:descricao) %></th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <% @host_historicos.each do |host_historico| %>
+      <tr>
+        <td><%= link_to host_historico.id, host_historico_path(host_historico), class: 'btn btn-default btn-xs' %></td>
+        <td><%= host_historico.user.nome %></td>
+        <td><%= host_historico.host.mac %></td>
+        <td><%= host_historico.rede.nome %></td>
+        <td><%= host_historico.motivo %></td>
+        <td><%= host_historico.nova_situacao_str %></td>
+        <td><%= host_historico.novo_status_str %></td>
+
+
+        <td><%= host_historico.descricao %></td>
+
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_host_historico_path(host_historico), :class => 'btn btn-default btn-xs' %>                   
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      host_historico_path(host_historico),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-xs btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
