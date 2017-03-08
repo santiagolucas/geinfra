@@ -87,3 +87,14 @@ div {
 label {
   display: block;
 }
+
+.alert {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 50px;
+    color: white;
+    background-color: #c14343;
+    margin-right: 50px;
+    font-size: 15px;
+}

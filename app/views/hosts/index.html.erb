@@ -42,14 +42,19 @@
       <th><strong>Validade</strong></th>
     </tr>
   </thead>
+  
+  
+  
+  
   <tbody>
     <% @hosts.each do |host| %>
-    <% if host.ativo = true 
+    <% if host.ativo?
       status = "Sim"
     else 
       status = "Não"
       end %>
-    <% if Time.now > host.validade 
+    <% if Time.zone.now  > host.validade 
+          flash[:info] = "Você tem hosts expirados !"
           @alerta = "Prazo de validade expirado !"
         else
           @alerta = "Válido !"
