@@ -1,4 +1,5 @@
 <%- model_class = Host -%>
+<%= @hora %>
 <div class="page-header form-group">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
   <%= link_to t('.new', :default => t("helpers.links.new")),
@@ -47,24 +48,26 @@
   
   
   <tbody>
-    <% @hosts.each do |host| %>
-    <% if host.ativo?
-      status = "Sim"
-    else 
-      status = "Não"
+    <tr>
+    <% @hosts.each do |host| %> 
+       <%   if host.ativo?
+        @status = "Sim"
+      else
+        @status = "Não"
       end %>
-    <% if Time.zone.now  > host.validade 
-          flash[:info] = "Você tem hosts expirados !"
-          @alerta = "Prazo de validade expirado !"
-        else
-          @alerta = "Válido !"
-          end %>
+      
+      <% if Time.zone.now - 10800 > host.validade
+        flash[:info] = "Você tem hosts expirados !"
+        @alerta = "Expirado !"
+      else
+        @alerta = "Válido !"
+      end %>
       <tr>
         <td><%= link_to host.id, host_path(host),class: 'btn btn-default btn-xs'%></td>
         <td><%= host.mac %></td>
         <td><%= host.nome %></td>
         <td><%= host.descricao %></td>
-        <td><%= status %></td>
+        <td><%= @status %></td>
         <td><%= host.validade.strftime("%d/%m/%Y %H:%M")%></td>
         <td><%= @alerta %></td>
         <td>

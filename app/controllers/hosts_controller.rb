@@ -4,7 +4,13 @@ class HostsController < ApplicationController
 
   # GET /hosts
   # GET /hosts.json
-  def index
+  def  index
+    @hosts= Host.all
+    
+    @hosts.each do |host|
+
+    end
+    
     @filtro ||= Hash.new
     @filtro[:mac] ||= "PRIMEIRAVEZ"
 
@@ -13,12 +19,6 @@ class HostsController < ApplicationController
     else
       @filtro[:mac] = ""
     end
-
-   # if params[:search]
-    #  @hosts = Host.search(params[:search])
-    #else
-    #@hosts = Host.all
-    #end
 
   end
 
@@ -40,7 +40,7 @@ class HostsController < ApplicationController
   # POST /hosts.json
   def create
     @host = Host.new(host_params)
-
+    @horario = Time.zone.now - 10800
     respond_to do |format|
       if @host.save
         format.html { redirect_to @host, notice: 'Host criado com sucesso!!' }
