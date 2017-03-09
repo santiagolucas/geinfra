@@ -6,11 +6,6 @@ class HostsController < ApplicationController
   # GET /hosts.json
   def  index
     @hosts= Host.all
-    
-    @hosts.each do |host|
-
-    end
-    
     @filtro ||= Hash.new
     @filtro[:mac] ||= "PRIMEIRAVEZ"
 

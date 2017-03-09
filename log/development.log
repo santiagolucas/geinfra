@@ -39579,3 +39579,800 @@ Processing by HostsController#index as HTML
 Completed 200 OK in 197ms (Views: 173.8ms | ActiveRecord: 2.0ms)
 
 
+Started GET "/" for 177.107.36.2 at 2017-03-09 17:35:09 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /home/ubuntu/workspace/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (31.5ms)
+Completed 200 OK in 659ms (Views: 609.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/hosts/36/edit" for 177.107.36.2 at 2017-03-09 17:35:30 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#edit as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  Rendering hosts/edit.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (22.7ms)
+  Rendered hosts/edit.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 202ms (Views: 198.4ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/hosts/36" for 177.107.36.2 at 2017-03-09 17:35:37 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Id1qgrfT184fIzpiwqJqWYah+9msbGVwWvIPLn5p95CFV3HZa+HQBxO38HWBHKupxbz0moybWVXNCLBTGdvmUg==", "host"=>{"mac"=>"dfasdfasdfad", "nome"=>"fdfadfadsfsdfa", "descricao"=>"dfdf", "validade"=>"2017-03-09T14:36", "ativo"=>"1"}, "commit"=>"Atualizar Host", "id"=>"36"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[33mUPDATE "hosts" SET "validade" = ?, "updated_at" = ? WHERE "hosts"."id" = ?[0m  [["validade", 2017-03-09 14:36:00 UTC], ["updated_at", 2017-03-09 17:35:37 UTC], ["id", 36]]
+  [1m[35m (8.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://projetos-udemy-lucastg.c9users.io/hosts/36
+Completed 302 Found in 39ms (ActiveRecord: 10.8ms)
+
+
+Started GET "/hosts/36" for 177.107.36.2 at 2017-03-09 17:35:38 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  Rendering hosts/show.html.erb within layouts/application
+  Rendered hosts/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 73ms (Views: 70.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:35:39 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (34.2ms)
+Completed 200 OK in 127ms (Views: 122.8ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/hosts/35" for 177.107.36.2 at 2017-03-09 17:35:42 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6qWQ6CQYI3U6RqMiJ1BTMkV3GbiRK+ocsAs0iuVyHaIWTnZLdHGbwKsQ1IciRFKiV3xRThjNuefZM8r7kZ1u7A==", "id"=>"35"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "hosts" WHERE "hosts"."id" = ?[0m  [["id", 35]]
+  [1m[35m (10.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://projetos-udemy-lucastg.c9users.io/hosts
+Completed 302 Found in 16ms (ActiveRecord: 11.3ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:35:42 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 66ms (Views: 62.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:35:44 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 67ms (Views: 63.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:35:49 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 156ms (Views: 151.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:35:53 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 140ms (Views: 135.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:36:00 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 92ms (Views: 85.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:36:39 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /home/ubuntu/workspace/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 135ms (Views: 109.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:37:05 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /home/ubuntu/workspace/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 87ms (Views: 67.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:37:08 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 67ms (Views: 63.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:37:10 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 65ms (Views: 61.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:37:15 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /home/ubuntu/workspace/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 104ms (Views: 80.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:38:02 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /home/ubuntu/workspace/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 96ms (Views: 70.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:38:03 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 263ms (Views: 257.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:38:19 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 107ms (Views: 103.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:38:35 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /home/ubuntu/workspace/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 202ms (Views: 87.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:38:42 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /home/ubuntu/workspace/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 118ms (Views: 93.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:39:58 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 94ms (Views: 89.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:40:16 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /home/ubuntu/workspace/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 220ms (Views: 84.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:40:18 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 96ms (Views: 91.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:40:26 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /home/ubuntu/workspace/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 131ms (Views: 103.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:48:51 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 81ms (Views: 77.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:49:10 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /home/ubuntu/workspace/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 213ms (Views: 186.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:49:24 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 92ms (Views: 87.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:51:27 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 83ms (Views: 79.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:53:08 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 114ms (Views: 109.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for 177.107.36.2 at 2017-03-09 17:53:26 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:UsersController> at /home/ubuntu/workspace/geinfra/app/controllers/users_controller.rb:2)
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (nome like '%%' )[0m
+  Rendered users/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 99ms (Views: 93.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:53:27 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 137ms (Views: 115.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:53:51 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 85ms (Views: 80.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 17:53:55 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 72ms (Views: 68.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 18:06:03 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 89ms (Views: 85.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 18:06:13 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 65ms (Views: 62.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/hosts/36/edit" for 177.107.36.2 at 2017-03-09 18:06:46 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#edit as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  Rendering hosts/edit.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (4.3ms)
+  Rendered hosts/edit.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 71ms (Views: 66.8ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/hosts/36" for 177.107.36.2 at 2017-03-09 18:06:49 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7US+/z58vqfz71BXTEUJn1eNxacCFpALeudt8bnr5dhJzqWk4k65bv97mkAP+8hvFJDK5CLhrC7tHdKM3ln0Gg==", "host"=>{"mac"=>"dfasdfasdfad", "nome"=>"fdfadfadsfsdfa", "descricao"=>"dfdf", "validade"=>"2017-03-09T14:36:00", "ativo"=>"0"}, "commit"=>"Atualizar Host", "id"=>"36"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "hosts" SET "ativo" = ?, "updated_at" = ? WHERE "hosts"."id" = ?[0m  [["ativo", false], ["updated_at", 2017-03-09 18:06:49 UTC], ["id", 36]]
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://projetos-udemy-lucastg.c9users.io/hosts/36
+Completed 302 Found in 18ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/hosts/36" for 177.107.36.2 at 2017-03-09 18:06:49 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  Rendering hosts/show.html.erb within layouts/application
+  Rendered hosts/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 90ms (Views: 86.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 18:06:50 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 91ms (Views: 86.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/hosts/25/edit" for 177.107.36.2 at 2017-03-09 18:06:52 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#edit as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  Rendering hosts/edit.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (5.6ms)
+  Rendered hosts/edit.html.erb within layouts/application (90.3ms)
+Completed 200 OK in 177ms (Views: 173.5ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/hosts/25" for 177.107.36.2 at 2017-03-09 18:06:54 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"03JIr0BspkW//iJo01oDmqLzCQ3TkXRW9dVl8d3fz0XzUzRigoAysevr20qLdvhDao2t4aAWUs7BoEAloLeR3g==", "host"=>{"mac"=>"fadsfad", "nome"=>"dafadsfadf", "descricao"=>"", "validade"=>"2017-05-21T00:00:00", "ativo"=>"1"}, "commit"=>"Atualizar Host", "id"=>"25"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://projetos-udemy-lucastg.c9users.io/hosts/25
+Completed 302 Found in 5ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/hosts/25" for 177.107.36.2 at 2017-03-09 18:06:54 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  Rendering hosts/show.html.erb within layouts/application
+  Rendered hosts/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 80ms (Views: 76.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 177.107.36.2 at 2017-03-09 18:06:55 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 163ms (Views: 157.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 177.107.36.2 at 2017-03-09 18:07:01 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 80ms (Views: 76.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 177.107.36.2 at 2017-03-09 18:07:02 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 78ms (Views: 74.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 177.107.36.2 at 2017-03-09 18:07:04 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 87ms (Views: 83.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 177.107.36.2 at 2017-03-09 18:07:06 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 80ms (Views: 77.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 177.107.36.2 at 2017-03-09 18:07:07 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 82ms (Views: 77.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/hosts/36/edit" for 177.107.36.2 at 2017-03-09 18:07:35 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#edit as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  Rendering hosts/edit.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (4.0ms)
+  Rendered hosts/edit.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 76ms (Views: 73.4ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/hosts/36" for 177.107.36.2 at 2017-03-09 18:07:45 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MSzBugp1FTTlQRoIyp7wEqM+2ie0+cfVAf51pql4jvGVptrh1kcS/enV0B+JIDHi4CPVZJQO+/CWBMrbzsqfMw==", "host"=>{"mac"=>"dfasdfasdfad", "nome"=>"fdfadfadsfsdfa", "descricao"=>"dfdf", "validade"=>"2017-09-09T14:36", "ativo"=>"0"}, "commit"=>"Atualizar Host", "id"=>"36"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "hosts" SET "validade" = ?, "updated_at" = ? WHERE "hosts"."id" = ?[0m  [["validade", 2017-09-09 14:36:00 UTC], ["updated_at", 2017-03-09 18:07:45 UTC], ["id", 36]]
+  [1m[35m (10.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://projetos-udemy-lucastg.c9users.io/hosts/36
+Completed 302 Found in 20ms (ActiveRecord: 11.5ms)
+
+
+Started GET "/hosts/36" for 177.107.36.2 at 2017-03-09 18:07:45 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  Rendering hosts/show.html.erb within layouts/application
+  Rendered hosts/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 116ms (Views: 112.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 177.107.36.2 at 2017-03-09 18:07:46 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (149.0ms)
+Completed 200 OK in 249ms (Views: 244.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/hosts/new" for 177.107.36.2 at 2017-03-09 18:07:51 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/new.html.erb within layouts/application
+  Rendered hosts/_form.html.erb (4.0ms)
+  Rendered hosts/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 83ms (Views: 79.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/hosts" for 177.107.36.2 at 2017-03-09 18:08:11 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1FjqkFeFcL4r7R7mJnDxqEyRuxS6WUGrl2u8g3sBIOMLFY5EtOw6GVWm2ZcyryaxDrfSj8+a8ZQBRYre0jZ4pw==", "host"=>{"mac"=>"dfasdfddddd", "nome"=>"DDdddfadsfeesw", "descricao"=>"", "validade"=>"2017-03-09T01:01", "ativo"=>"1"}, "commit"=>"Criar Host"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "hosts" ("mac", "nome", "descricao", "ativo", "created_at", "updated_at", "validade") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["mac", "dfasdfddddd"], ["nome", "DDdddfadsfeesw"], ["descricao", ""], ["ativo", true], ["created_at", 2017-03-09 18:08:11 UTC], ["updated_at", 2017-03-09 18:08:11 UTC], ["validade", 2017-03-09 01:01:00 UTC]]
+  [1m[35m (12.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://projetos-udemy-lucastg.c9users.io/hosts/37
+Completed 302 Found in 66ms (ActiveRecord: 13.6ms)
+
+
+Started GET "/hosts/37" for 177.107.36.2 at 2017-03-09 18:08:11 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.1ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering hosts/show.html.erb within layouts/application
+  Rendered hosts/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 113ms (Views: 110.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 18:08:12 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 159ms (Views: 153.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 18:08:14 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts"[0m
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.4ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (123.2ms)
+Completed 200 OK in 251ms (Views: 245.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 18:39:22 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /home/ubuntu/workspace/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  Rendered hosts/index.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 2.6ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/geinfra/app/views/hosts/index.html.erb:90: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/hosts/index.html.erb:90: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.1ms)
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 18:39:49 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 282ms (Views: 277.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/hosts" for 177.107.36.2 at 2017-03-09 18:40:28 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 209ms (Views: 204.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/redes" for 177.107.36.2 at 2017-03-09 18:46:47 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:RedesController> at /home/ubuntu/workspace/geinfra/app/controllers/redes_controller.rb:2)
+Processing by RedesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering redes/index.html.erb within layouts/application
+  [1m[36mRede Load (0.3ms)[0m  [1m[34mSELECT "redes".* FROM "redes" WHERE (nome like '%%' )[0m
+  Rendered redes/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 120ms (Views: 107.8ms | ActiveRecord: 1.2ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddControlePorToRedes (20170309184722)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "redes" ADD "controle_por" varchar[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170309184722"]]
+  [1m[35m (9.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/redes" for 177.107.36.2 at 2017-03-09 18:49:29 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:RedesController> at /home/ubuntu/workspace/geinfra/app/controllers/redes_controller.rb:2)
+Processing by RedesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering redes/index.html.erb within layouts/application
+  [1m[36mRede Load (0.2ms)[0m  [1m[34mSELECT "redes".* FROM "redes" WHERE (nome like '%%' )[0m
+  Rendered redes/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 124ms (Views: 88.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/redes/new" for 177.107.36.2 at 2017-03-09 18:50:39 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RedesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering redes/new.html.erb within layouts/application
+  Rendered redes/_form.html.erb (5.0ms)
+  Rendered redes/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 103ms (Views: 98.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/redes/new" for 177.107.36.2 at 2017-03-09 18:50:51 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RedesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering redes/new.html.erb within layouts/application
+  Rendered redes/_form.html.erb (5.4ms)
+  Rendered redes/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 129ms (Views: 126.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/redes/new" for 177.107.36.2 at 2017-03-09 18:51:12 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RedesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering redes/new.html.erb within layouts/application
+  Rendered redes/_form.html.erb (5.8ms)
+  Rendered redes/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 238ms (Views: 235.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/redes/new" for 177.107.36.2 at 2017-03-09 18:52:32 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RedesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering redes/new.html.erb within layouts/application
+  Rendered redes/_form.html.erb (4.0ms)
+  Rendered redes/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 199ms (Views: 196.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/redes/new" for 177.107.36.2 at 2017-03-09 18:52:45 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RedesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering redes/new.html.erb within layouts/application
+  Rendered redes/_form.html.erb (3.3ms)
+  Rendered redes/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 129ms (Views: 126.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/redes/new" for 177.107.36.2 at 2017-03-09 20:16:00 +0000
+Cannot render console from 177.107.36.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RedesController#new as HTML
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering redes/new.html.erb within layouts/application
+  Rendered redes/_form.html.erb (4.4ms)
+  Rendered redes/new.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 243ms (Views: 226.1ms | ActiveRecord: 7.0ms)
+
+

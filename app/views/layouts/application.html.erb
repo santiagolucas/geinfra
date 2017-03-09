@@ -82,7 +82,7 @@
           <div class="page-header">
         <% if logged_in? %>
           Olá <%= logged_in?.nome %> !</br>
-          <%= Time.zone.now - 10800 %>
+          <%= Time.zone.now %>
           <% end %>
             </div>
           <%= yield %>

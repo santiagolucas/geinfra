@@ -38,8 +38,7 @@
       <th><%= model_class.human_attribute_name(:nome) %></th>
       <th><%= model_class.human_attribute_name(:descricao) %></th>
       <th><%= model_class.human_attribute_name(:ativa) %></th>
-      <th><%= model_class.human_attribute_name(:controle_mac) %></th>
-      <th><%= model_class.human_attribute_name(:controle_usuario) %></th>
+      <th><%= model_class.human_attribute_name(:controle_por) %></th>
       <th><%= model_class.human_attribute_name(:grupo_ad) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
@@ -51,8 +50,7 @@
         <td><%= rede.nome %></td>
         <td><%= rede.descricao %></td>
         <td><%= rede.ativa %></td>
-        <td><%= rede.controle_mac %></td>
-        <td><%= rede.controle_usuario %></td>
+        <td><%= rede.controle_por %></td>
         <td><%= rede.grupo_ad %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
