@@ -47,7 +47,6 @@
   <tbody>
     <% @host_historicos.each do |host_historico| %>
       <tr>
-        <td><%= link_to host_historico.id, host_historico_path(host_historico), class: 'btn btn-default btn-xs' %></td>
         <td><%= host_historico.user.nome %></td>
         <td><%= host_historico.host.mac %></td>
         <td><%= host_historico.rede.nome %></td>
