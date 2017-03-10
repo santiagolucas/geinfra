@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170307171920) do
+ActiveRecord::Schema.define(version: 20170309184722) do
 
   create_table "host_historicos", force: :cascade do |t|
     t.integer  "host_id"
@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 20170307171920) do
     t.string   "grupo_ad"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+    t.string   "controle_por"
   end
 
   create_table "users", force: :cascade do |t|

@@ -77,6 +77,6 @@ class RedesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def rede_params
-      params.require(:rede).permit(:nome, :descricao, :ativa, :controle_mac, :controle_usuario, :grupo_ad)
+      params.require(:rede).permit(:nome, :descricao, :ativa, :grupo_ad, :controle_por)
     end
 end

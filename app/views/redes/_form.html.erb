@@ -36,25 +36,23 @@
     </div>
     <%=f.error_span(:grupo_ad) %>
   </div>  
-  <div class="form-group">
-      <%= f.label :ativa, :class => 'control-label col-lg-2' %>
+  
+  <div>
+    <%= f.label :controle_por, :class => 'control-label col-lg-2' %>
     <div class="col-lg-1">
+      <%= f.select :controle_por, options_for_control(@rede.controle_por), :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:controle_por) %>
+  </div>
+  
+  <div class="form-group">
+      <%= f.label :ativa, :class => 'control-label col-xs-2' %>
+    <div class="col-xs-1">
       <%= f.check_box :ativa, :class => 'form-control' %>
     </div>
     <%=f.error_span(:ativa) %>
-
-    <%= f.label :controle_mac, :class => 'control-label col-lg-2' %>
-    <div class="col-lg-1">
-      <%= f.check_box :controle_mac, :class => 'form-control' %>
     </div>
-    <%=f.error_span(:controle_mac) %>
 
-    <%= f.label :controle_usuario, :class => 'control-label col-lg-2' %>
-    <div class="col-lg-1">
-      <%= f.check_box :controle_usuario, :class => 'form-control' %>
-    </div>
-    <%=f.error_span(:controle_usuario) %>
-  </div>
 
   <div class="form-group">
     <div class="col-lg-offset-2 col-lg-10">
