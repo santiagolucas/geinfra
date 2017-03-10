@@ -40376,6 +40376,7 @@ Processing by RedesController#new as HTML
 Completed 200 OK in 243ms (Views: 226.1ms | ActiveRecord: 7.0ms)
 
 
+<<<<<<< HEAD
 Started GET "/contacts" for 179.176.108.243 at 2017-03-10 02:09:39 +0000
 Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
@@ -41182,5 +41183,645 @@ Processing by HostsController#index as HTML
   [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
   Rendered hosts/index.html.erb within layouts/application (6.0ms)
 Completed 200 OK in 65ms (Views: 62.8ms | ActiveRecord: 0.4ms)
+
+
+=======
+>>>>>>> acdea4eeadc3676e4d2655e945327f8423a30b22
+Started GET "/hosts" for 179.176.108.243 at 2017-03-10 02:42:08 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /home/ubuntu/workspace/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.4ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (37.5ms)
+Completed 200 OK in 654ms (Views: 609.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/host_historicos" for 179.176.108.243 at 2017-03-10 02:42:11 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostHistoricosController> at /home/ubuntu/workspace/geinfra/app/controllers/host_historicos_controller.rb:2)
+Processing by HostHistoricosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering host_historicos/index.html.erb within layouts/application
+  [1m[36mHostHistorico Load (0.2ms)[0m  [1m[34mSELECT "host_historicos".* FROM "host_historicos" WHERE (id like '%%' )[0m
+  Rendered host_historicos/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 172ms (Views: 163.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users" for 179.176.108.243 at 2017-03-10 02:42:12 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:UsersController> at /home/ubuntu/workspace/geinfra/app/controllers/users_controller.rb:2)
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (nome like '%%' )[0m
+  Rendered users/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 194ms (Views: 191.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/redes" for 179.176.108.243 at 2017-03-10 02:42:14 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/home/ubuntu/workspace/geinfra/app/controllers/redes_controller.rb:80: syntax error, unexpected <<
+<<<<<<< HEAD
+  ^
+/home/ubuntu/workspace/geinfra/app/controllers/redes_controller.rb:82: syntax error, unexpected ===, expecting keyword_end
+=======
+   ^
+/home/ubuntu/workspace/geinfra/app/controllers/redes_controller.rb:84: syntax error, unexpected >>, expecting keyword_end
+>>>>>>> acdea4eeadc3676e4d2655e945327f8423a30b22
+  ^):
+  
+app/controllers/redes_controller.rb:80: syntax error, unexpected <<
+app/controllers/redes_controller.rb:82: syntax error, unexpected ===, expecting keyword_end
+app/controllers/redes_controller.rb:84: syntax error, unexpected >>, expecting keyword_end
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.3ms)
+Started GET "/redes" for 179.176.108.243 at 2017-03-10 02:42:50 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:RedesController> at /home/ubuntu/workspace/geinfra/app/controllers/redes_controller.rb:2)
+Processing by RedesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering redes/index.html.erb within layouts/application
+  [1m[36mRede Load (0.2ms)[0m  [1m[34mSELECT "redes".* FROM "redes" WHERE (nome like '%%' )[0m
+  Rendered redes/index.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 749ms (Views: 714.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/redes/1/edit" for 179.176.108.243 at 2017-03-10 02:42:56 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RedesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRede Load (0.2ms)[0m  [1m[34mSELECT  "redes".* FROM "redes" WHERE "redes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering redes/edit.html.erb within layouts/application
+  Rendered redes/_form.html.erb (21.6ms)
+  Rendered redes/edit.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 158ms (Views: 154.4ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/redes/1" for 179.176.108.243 at 2017-03-10 02:43:05 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RedesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GALwWTOpJDIRzowIFmdk+4ehPynelQzZFAin4OkD6sdEuNPnYa7Oh+0LRBWA/fgDdSYdTJt8rZFs+qs1Gyl02Q==", "rede"=>{"nome"=>"CORP-...", "descricao"=>"Evento", "grupo_ad"=>"Suporte", "controle_por"=>"Mac", "ativa"=>"1"}, "commit"=>"Atualizar Rede", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRede Load (0.1ms)[0m  [1m[34mSELECT  "redes".* FROM "redes" WHERE "redes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "redes" SET "controle_por" = ?, "updated_at" = ? WHERE "redes"."id" = ?[0m  [["controle_por", "Mac"], ["updated_at", 2017-03-10 02:43:05 UTC], ["id", 1]]
+  [1m[35m (10.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://projetos-udemy-lucastg.c9users.io/redes/1
+Completed 302 Found in 23ms (ActiveRecord: 11.2ms)
+
+
+Started GET "/redes/1" for 179.176.108.243 at 2017-03-10 02:43:05 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RedesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRede Load (0.1ms)[0m  [1m[34mSELECT  "redes".* FROM "redes" WHERE "redes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering redes/show.html.erb within layouts/application
+  Rendered redes/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 113ms (Views: 109.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/redes" for 179.176.108.243 at 2017-03-10 02:43:06 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RedesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering redes/index.html.erb within layouts/application
+  [1m[36mRede Load (0.2ms)[0m  [1m[34mSELECT "redes".* FROM "redes" WHERE (nome like '%%' )[0m
+  Rendered redes/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 171ms (Views: 168.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/redes" for 179.176.108.243 at 2017-03-10 02:43:22 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RedesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering redes/index.html.erb within layouts/application
+  [1m[36mRede Load (0.2ms)[0m  [1m[34mSELECT "redes".* FROM "redes" WHERE (nome like '%%' )[0m
+  Rendered redes/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 193ms (Views: 190.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/redes/new" for 179.176.108.243 at 2017-03-10 02:43:24 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RedesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering redes/new.html.erb within layouts/application
+  Rendered redes/_form.html.erb (4.1ms)
+  Rendered redes/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 168ms (Views: 165.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/redes/new" for 179.176.108.243 at 2017-03-10 02:43:38 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RedesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering redes/new.html.erb within layouts/application
+  Rendered redes/_form.html.erb (3.4ms)
+  Rendered redes/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 80ms (Views: 77.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/redes/new" for 179.176.108.243 at 2017-03-10 02:43:47 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:RedesController> at /home/ubuntu/workspace/geinfra/app/controllers/redes_controller.rb:2)
+Processing by RedesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering redes/new.html.erb within layouts/application
+  Rendered redes/_form.html.erb (4.1ms)
+  Rendered redes/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 172ms (Views: 138.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 179.176.108.243 at 2017-03-10 02:43:48 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /home/ubuntu/workspace/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 165ms (Views: 160.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/redes" for 179.176.108.243 at 2017-03-10 02:43:50 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RedesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering redes/index.html.erb within layouts/application
+  [1m[36mRede Load (0.2ms)[0m  [1m[34mSELECT "redes".* FROM "redes" WHERE (nome like '%%' )[0m
+  Rendered redes/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 68ms (Views: 65.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/redes/new" for 179.176.108.243 at 2017-03-10 02:43:53 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RedesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering redes/new.html.erb within layouts/application
+  Rendered redes/_form.html.erb (3.7ms)
+  Rendered redes/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 161ms (Views: 158.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/redes" for 179.176.108.243 at 2017-03-10 02:44:02 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RedesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nqgNhBGFXETwNIGd7Kuktpktmpd9csThg7wE1TaKkmAT5AjfclSpUS4daPnWOiZczxc85dTpflSJ7tYXDTxZyA==", "rede"=>{"nome"=>"Deputados", "descricao"=>"dlfakjsdf", "grupo_ad"=>"AD", "controle_por"=>"Mac", "ativa"=>"1"}, "commit"=>"Criar Rede"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "redes" ("nome", "descricao", "ativa", "grupo_ad", "created_at", "updated_at", "controle_por") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["nome", "Deputados"], ["descricao", "dlfakjsdf"], ["ativa", true], ["grupo_ad", "AD"], ["created_at", 2017-03-10 02:44:02 UTC], ["updated_at", 2017-03-10 02:44:02 UTC], ["controle_por", "Mac"]]
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://projetos-udemy-lucastg.c9users.io/redes/8
+Completed 302 Found in 124ms (ActiveRecord: 9.2ms)
+
+
+Started GET "/redes/8" for 179.176.108.243 at 2017-03-10 02:44:02 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RedesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRede Load (0.2ms)[0m  [1m[34mSELECT  "redes".* FROM "redes" WHERE "redes"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering redes/show.html.erb within layouts/application
+  Rendered redes/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 69ms (Views: 65.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/redes" for 179.176.108.243 at 2017-03-10 02:44:04 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RedesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering redes/index.html.erb within layouts/application
+  [1m[36mRede Load (0.2ms)[0m  [1m[34mSELECT "redes".* FROM "redes" WHERE (nome like '%%' )[0m
+  Rendered redes/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 66ms (Views: 63.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/redes" for 179.176.108.243 at 2017-03-10 02:47:36 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+PG::ConnectionBad (could not connect to server: Connection refused
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+):
+  
+activerecord (5.0.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `initialize'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `new'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:721:in `new_connection'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:765:in `checkout_new_connection'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:744:in `try_to_checkout_new_connection'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:705:in `acquire_connection'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:501:in `checkout'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:875:in `retrieve_connection'
+activerecord (5.0.0.1) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.0.1) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.0.1) lib/active_record/migration.rb:558:in `connection'
+activerecord (5.0.0.1) lib/active_record/migration.rb:545:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.2ms)
+Started GET "/redes" for 179.176.108.243 at 2017-03-10 02:53:09 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "project_development" does not exist
+):
+  
+activerecord (5.0.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:675:in `rescue in connect'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:721:in `new_connection'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:765:in `checkout_new_connection'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:744:in `try_to_checkout_new_connection'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:705:in `acquire_connection'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:501:in `checkout'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:875:in `retrieve_connection'
+activerecord (5.0.0.1) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.0.1) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.0.1) lib/active_record/migration.rb:558:in `connection'
+activerecord (5.0.0.1) lib/active_record/migration.rb:545:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.5ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from status_code_with_paginate at /usr/local/rvm/gems/ruby-2.3.0/gems/will_paginate-3.1.0/lib/will_paginate/railtie.rb:49)
+  [1m[35m (13.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (12.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(279088437195799245);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateHosts (20161012165011)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.6ms)[0m  [1m[35mCREATE TABLE "hosts" ("id" serial primary key, "mac" character varying, "nome" character varying, "descricao" text, "ativo" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161012165011"]]
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRedes (20161012165348)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE TABLE "redes" ("id" serial primary key, "nome" character varying, "descricao" text, "ativa" boolean, "controle_mac" boolean, "controle_usuario" boolean, "grupo_ad" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161012165348"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateHostHistoricos (20161012165615)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.6ms)[0m  [1m[35mCREATE TABLE "host_historicos" ("id" serial primary key, "host_id" integer, "nova_situacao" boolean, "novo_status" boolean, "usuario_id" integer, "motivo" character varying(1), "descricao" text, "rede_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161012165615"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUsers (20161022151128)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "login" character varying, "password_digest" character varying, "nome" character varying, "situacao" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161022151128"]]
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddUserIdToHostHistoricos (20161023132659)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "host_historicos" ADD "user_id" integer[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161023132659"]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddValidadeToHosts (20170307171920)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "hosts" ADD "validade" timestamp[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170307171920"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddControlePorToRedes (20170309184722)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "redes" ADD "controle_por" character varying[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170309184722"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-03-10 02:54:30 UTC], ["updated_at", 2017-03-10 02:54:30 UTC]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(279088437195799245)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'host_historicos'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'hosts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'redes'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+Started GET "/redes" for 179.176.108.243 at 2017-03-10 02:54:41 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:RedesController> at /home/ubuntu/workspace/geinfra/app/controllers/redes_controller.rb:2)
+Processing by RedesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 31ms (ActiveRecord: 4.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/application_controller.rb:7:in `logged_in?'
+app/controllers/application_controller.rb:13:in `authorize'
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.7ms)
+Started GET "/redes" for 179.176.108.243 at 2017-03-10 02:55:04 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RedesController#index as HTML
+Redirected to https://projetos-udemy-lucastg.c9users.io/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 179.176.108.243 at 2017-03-10 02:55:04 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 622ms (Views: 619.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 179.176.108.243 at 2017-03-10 02:55:10 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:UsersController> at /home/ubuntu/workspace/geinfra/app/controllers/users_controller.rb:2)
+Processing by UsersController#index as HTML
+Redirected to https://projetos-udemy-lucastg.c9users.io/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 179.176.108.243 at 2017-03-10 02:55:10 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 193ms (Views: 191.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 179.176.108.243 at 2017-03-10 02:55:33 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 105ms (Views: 102.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 179.176.108.243 at 2017-03-10 02:55:37 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (nome like '%%' )[0m
+  Rendered users/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 89ms (Views: 81.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/new" for 179.176.108.243 at 2017-03-10 02:55:38 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (19.9ms)
+  Rendered users/new.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 207ms (Views: 195.2ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/users" for 179.176.108.243 at 2017-03-10 02:55:48 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fQe80bZR5Bo9dlvdmqX6bjfVmGewStZNos4rTMiJVCOzJIwgwg880w6ei4uJItxaHdg3NKFenEoTCx1y2N72jw==", "user"=>{"login"=>"lucas.miranda", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "nome"=>"Lucas Santiago", "situacao"=>"A"}, "commit"=>"Criar Usuário"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("login", "password_digest", "nome", "situacao", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["login", "lucas.miranda"], ["password_digest", "$2a$10$SFCGY/egyxNCuGH2PmTtTuIW4O6IhfwObhnzma8Irt0J4t46lQoUS"], ["nome", "Lucas Santiago"], ["situacao", "A"], ["created_at", 2017-03-10 02:55:49 UTC], ["updated_at", 2017-03-10 02:55:49 UTC]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://projetos-udemy-lucastg.c9users.io/
+Completed 302 Found in 81ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 179.176.108.243 at 2017-03-10 02:55:49 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostsController> at /home/ubuntu/workspace/geinfra/app/controllers/hosts_controller.rb:2)
+Processing by HostsController#index as HTML
+Redirected to https://projetos-udemy-lucastg.c9users.io/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 179.176.108.243 at 2017-03-10 02:55:49 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 69ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 179.176.108.243 at 2017-03-10 02:55:56 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TRH7D/hkqbJa0/h1FfBCfepolWjssHcEz7molvUnMEfGhhcBxVIKa3ydXpkGw1zltdkB0DDWOt2d2rDwJcVa7w==", "login"=>"lucas.miranda", "password"=>"[FILTERED]", "commit"=>"Entrar"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."login" = $1 LIMIT $2[0m  [["login", "lucas.miranda"], ["LIMIT", 1]]
+Redirected to https://projetos-udemy-lucastg.c9users.io/
+Completed 302 Found in 232ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 179.176.108.243 at 2017-03-10 02:55:56 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.5ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 67ms (Views: 60.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users" for 179.176.108.243 at 2017-03-10 02:56:00 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (nome like '%%' )[0m
+  Rendered users/index.html.erb within layouts/application (4.9ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 101ms (Views: 98.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/redes" for 179.176.108.243 at 2017-03-10 02:56:01 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:RedesController> at /home/ubuntu/workspace/geinfra/app/controllers/redes_controller.rb:2)
+Processing by RedesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering redes/index.html.erb within layouts/application
+  [1m[36mRede Load (0.7ms)[0m  [1m[34mSELECT "redes".* FROM "redes" WHERE (nome like '%%' )[0m
+  Rendered redes/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 112ms (Views: 99.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/host_historicos" for 179.176.108.243 at 2017-03-10 02:56:02 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:HostHistoricosController> at /home/ubuntu/workspace/geinfra/app/controllers/host_historicos_controller.rb:2)
+Processing by HostHistoricosController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering host_historicos/index.html.erb within layouts/application
+  [1m[36mHostHistorico Load (0.8ms)[0m  [1m[34mSELECT "host_historicos".* FROM "host_historicos" WHERE (id like '%%' )[0m
+  Rendered host_historicos/index.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (PG::UndefinedFunction: ERROR:  operator does not exist: integer ~~ unknown
+LINE 1: ...st_historicos".* FROM "host_historicos" WHERE (id like '%%' ...
+                                                             ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+: SELECT "host_historicos".* FROM "host_historicos" WHERE (id like '%%' )):
+    45:     </tr>
+    46:   </thead>
+    47:   <tbody>
+    48:     <% @host_historicos.each do |host_historico| %>
+    49:       <tr>
+    50:         <td><%= link_to host_historico.id, host_historico_path(host_historico), class: 'btn btn-default btn-xs' %></td>
+    51:         <td><%= host_historico.user.nome %></td>
+  
+app/views/host_historicos/index.html.erb:48:in `_app_views_host_historicos_index_html_erb__1705337986518815880_70140815748400'
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.4ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from status_code_with_paginate at /usr/local/rvm/gems/ruby-2.3.0/gems/will_paginate-3.1.0/lib/will_paginate/railtie.rb:49)
+Started GET "/hosts" for 179.176.108.243 at 2017-03-10 02:56:03 +0000
+Cannot render console from 179.176.108.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hosts/index.html.erb within layouts/application
+  [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT "hosts".* FROM "hosts" WHERE (mac like '%%' )[0m
+  Rendered hosts/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 128ms (Views: 124.9ms | ActiveRecord: 0.6ms)
 
 

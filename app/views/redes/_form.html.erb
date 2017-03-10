@@ -37,8 +37,8 @@
     <%=f.error_span(:grupo_ad) %>
   </div>  
   
-  <div>
-    <%= f.label :controle_por, :class => 'control-label col-lg-2' %>
+  <div class="form-group">
+      <%= f.label :ativa, :class => 'control-label col-lg-2' %>
     <div class="col-lg-1">
       <%= f.select :controle_por, options_for_control(@rede.controle_por), :class => 'form-control' %>
     </div>

@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20170309184722) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "host_historicos", force: :cascade do |t|
     t.integer  "host_id"
     t.boolean  "nova_situacao"
@@ -54,15 +57,6 @@ ActiveRecord::Schema.define(version: 20170309184722) do
     t.string   "situacao"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
-  end
-
-  create_table "usuarios", force: :cascade do |t|
-    t.string   "login"
-    t.string   "senha"
-    t.string   "nome"
-    t.string   "situacao",   limit: 1
-    t.datetime "created_at",           null: false
-    t.datetime "updated_at",           null: false
   end
 
 end
