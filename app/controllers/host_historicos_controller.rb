@@ -5,7 +5,7 @@ class HostHistoricosController < ApplicationController
   # GET /host_historicos
   # GET /host_historicos.json
   def index
-    @host_historicos = HostHistorico.all
+    @host_historico = HostHistorico.all
     @filtro ||= Hash.new
     @filtro[:id] ||= "PRIMEIRAVEZ"
 

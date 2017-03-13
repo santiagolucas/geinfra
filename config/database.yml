@@ -1,6 +1,6 @@
 development:
   adapter: postgresql
-  encoding: SQL_ASCII
+  encoding: UTF8
   database: project_development
   pool: 5
   username: 

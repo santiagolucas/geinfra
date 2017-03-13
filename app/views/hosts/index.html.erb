@@ -48,21 +48,21 @@
   
   
   <tbody>
-    <% @hosts.each do |host| %> 
-        
+    <% @hosts.each do |host| %>
+
+    <% if Time.zone.now - 10800 > host.validade
+         flash[:info] = "Você tem hosts expirados !"
+         @alerta = "Expirado"
+       else
+         @alerta = "Válido"
+       end %>
+
     <% if host.ativo?
         @status = "Sim"
        else
         @status = "Não"
        end %>
-      
-      <% if Time.zone.now > host.validade
-          flash[:info] = "Você tem hosts expirados !"
-          @alerta = "Expirado !"
-         else
-          @alerta = "Válido !"
-         end %>
-    
+
       <tr>
         <td><%= link_to host.id, host_path(host),class: 'btn btn-default btn-xs'%></td>
         <td><%= host.mac %></td>
