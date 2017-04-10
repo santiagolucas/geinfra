@@ -57,6 +57,10 @@ class HostsController < ApplicationController
   def update
     @redes = Rede.all
     respond_to do |format|
+    #  puts "***************"
+    #  p host_params
+    #  p @current_user
+    #  @host.usuario_alteracao = @current_user.id
       if @host.update(host_params)
         format.html { redirect_to @host, notice: 'Host atualizado com sucesso' }
         format.json { render :show, status: :ok, location: @host }

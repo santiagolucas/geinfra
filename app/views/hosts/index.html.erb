@@ -46,26 +46,13 @@
   <tbody>
     <% @hosts.each do |host| %>
 
-    <% if Time.zone.now - 10800 > host.validade
-         flash[:info] = "Você tem hosts expirados !"
-         @alerta = "Expirado"
-         host.ativo = false
-       else
-         @alerta = "Válido"
-       end %>
-
-    <% if host.ativo?
-        @status = "Sim"
-       else
-        @status = "Não"
-       end %>
       <tr>
         <td><%= link_to host.id, host_path(host),class: 'btn btn-default btn-xs' %></td>
         <td><%= host.mac %></td>
         <td><%= host.nome %></td>
         <td><%= host.rede.nome %></td>
         <td><%= host.memorando %></td>
-        <td><%= host.validade.strftime("%d/%m/%Y %H:%M") %></td>
+        <td><%= host.validade.strftime("%d/%m/%Y %H:%M") unless host.validade.nil?  %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_host_path(host), :class => 'btn btn-default btn-xs' %>
