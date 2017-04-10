@@ -4,18 +4,24 @@
 </div>
 
 <dl class="dl-horizontal">
-  <dt><strong><%= model_class.human_attribute_name(:mac) %>:</strong></dt>
+  <dt><strong>Mac: </strong></dt>
   <dd><%= @host.mac %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:nome) %>:</strong></dt>
+  <dt><strong>Nome: </strong></dt>
   <dd><%= @host.nome %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:descricao) %>:</strong></dt>
+  <dt><strong>Descrição: </strong></dt>
   <dd><%= @host.descricao %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:ativo) %>:</strong></dt>
+  <dt><strong>Ativo: </strong></dt>
   <dd><%= @host.ativo %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:created_at) %>:</strong></dt>
-  <dd><%= @host.created_at %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:updated_at) %>:</strong></dt>
-  <dd><%= @host.updated_at %></dd>
+    <dt><strong>Validade: </strong></dt>
+  <dd><%= @host.validade.strftime("%d/%m/%Y %H:%M") %></dd>
+    <dt><strong>Memorando: </strong></dt>
+  <dd><%= @host.memorando %></dd>
+    <dt><strong>Rede: </strong></dt>
+  <dd><%= @host.rede.nome %></dd>
+   <dt><strong>Criado em: </strong></dt>
+  <dd><%= @host.created_at.strftime("%d/%m/%Y %H:%M") %></dd>
+  <dt><strong>Atualizado em: </strong></dt>
+  <dd><%= @host.updated_at.strftime("%d/%m/%Y %H:%M") %></dd>
 
 </dl>
 

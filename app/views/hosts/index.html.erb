@@ -37,22 +37,19 @@
       <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:mac) %></th>
       <th><%= model_class.human_attribute_name(:nome) %></th>
-      <th><%= model_class.human_attribute_name(:descricao) %></th>
-      <th><%= model_class.human_attribute_name(:ativo) %></th>
+      <th><%= model_class.human_attribute_name(:rede_id) %></th>
+      <th><%= model_class.human_attribute_name(:memorando) %></th>
       <th><%= model_class.human_attribute_name(:validade) %></th>
-      <th><strong>Validade</strong></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
-  
-  
-  
-  
   <tbody>
     <% @hosts.each do |host| %>
 
     <% if Time.zone.now - 10800 > host.validade
          flash[:info] = "Você tem hosts expirados !"
          @alerta = "Expirado"
+         host.ativo = false
        else
          @alerta = "Válido"
        end %>
@@ -62,15 +59,13 @@
        else
         @status = "Não"
        end %>
-
       <tr>
-        <td><%= link_to host.id, host_path(host),class: 'btn btn-default btn-xs'%></td>
+        <td><%= link_to host.id, host_path(host),class: 'btn btn-default btn-xs' %></td>
         <td><%= host.mac %></td>
         <td><%= host.nome %></td>
-        <td><%= host.descricao %></td>
-        <td><%= @status %></td>
-        <td><%= host.validade.strftime("%d/%m/%Y %H:%M")%></td>
-        <td><%= @alerta %></td>
+        <td><%= host.rede.nome %></td>
+        <td><%= host.memorando %></td>
+        <td><%= host.validade.strftime("%d/%m/%Y %H:%M") %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_host_path(host), :class => 'btn btn-default btn-xs' %>
@@ -85,3 +80,4 @@
   </tbody>
 </table>
 </div>
+

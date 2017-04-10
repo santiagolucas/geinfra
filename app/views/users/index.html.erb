@@ -60,6 +60,28 @@
                       :class => 'btn btn-xs btn-danger' %>
         </td>
       </tr>
+
+
+
+       <article class="ps-conteudo__content">
+          <ul class="card">
+            <li class="card__item">
+              <div class="card__header">
+                <h2 class="card__id"><span>ID</span> <%= user.id %></h2>
+              </div>
+              <div class="card__info">
+                <h3 class="card__titulo"><%= user.nome %> <br/><span><%= user.login %></span></h4>
+                <p><strong>Situacao:</strong> <%= user.situacao %></p>
+              </div>
+              <div class="card__acao">
+                <button type="button" class="bt" name="button">Editar</button>
+                <button type="button" class="bt" name="button">Deletar</button>
+              </div>
+            </li>
+            </ul>
+            </article>
+
+
     <% end %>
   </tbody>
 </table>

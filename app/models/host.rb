@@ -3,5 +3,6 @@ class Host < ApplicationRecord
 		where("mac like ? ", "%#{query}%")
 	end
 	validates :mac, :nome, presence: true
+	belongs_to :rede
 	
 end

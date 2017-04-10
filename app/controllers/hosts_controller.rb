@@ -5,6 +5,7 @@ class HostsController < ApplicationController
   # GET /hosts
   # GET /hosts.json
   def  index
+    @redes = Rede.all
     @hosts= Host.all
     @filtro ||= Hash.new
     @filtro[:mac] ||= "PRIMEIRAVEZ"
@@ -20,20 +21,24 @@ class HostsController < ApplicationController
   # GET /hosts/1
   # GET /hosts/1.json
   def show
+    @redes = Rede.all
   end
 
   # GET /hosts/new
   def new
+    @redes = Rede.all
     @host = Host.new
   end
 
   # GET /hosts/1/edit
   def edit
+    @redes = Rede.all
   end
 
   # POST /hosts
   # POST /hosts.json
   def create
+    @redes = Rede.all
     @host = Host.new(host_params)
     @horario = Time.zone.now - 10800
     respond_to do |format|
@@ -50,6 +55,7 @@ class HostsController < ApplicationController
   # PATCH/PUT /hosts/1
   # PATCH/PUT /hosts/1.json
   def update
+    @redes = Rede.all
     respond_to do |format|
       if @host.update(host_params)
         format.html { redirect_to @host, notice: 'Host atualizado com sucesso' }
@@ -64,6 +70,7 @@ class HostsController < ApplicationController
   # DELETE /hosts/1
   # DELETE /hosts/1.json
   def destroy
+    @redes = Rede.all
     @host.destroy
     respond_to do |format|
       format.html { redirect_to hosts_url, notice: 'Host deletado com sucesso' }
@@ -79,6 +86,6 @@ class HostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def host_params
-      params.require(:host).permit(:mac, :nome, :descricao, :ativo, :validade)
+      params.require(:host).permit(:mac, :nome, :descricao, :ativo, :validade, :rede_id, :memorando)
     end
 end

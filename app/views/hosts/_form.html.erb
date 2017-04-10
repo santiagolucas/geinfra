@@ -22,6 +22,7 @@
     </div>
     <%=f.error_span(:mac) %>
   </div>
+
   <div class="form-group">
     <%= f.label :nome, :class => 'control-label col-lg-2' %>
     <div class="col-lg-8">
@@ -29,6 +30,7 @@
     </div>
     <%=f.error_span(:nome) %>
   </div>
+
   <div class="form-group">
     <%= f.label :descricao, :class => 'control-label col-lg-2' %>
     <div class="col-lg-8">
@@ -38,11 +40,27 @@
   </div>
 
   <div class="form-group">
-    <%= f.label :validade, :class => 'control-label col-lg-2' %>
+    <%= f.label :memorando, :class => 'control-label col-lg-2' %>
     <div class="col-md-1">
-     <%= f.datetime_local_field :validade %>
+      <%= f.text_field :memorando, :class => 'form-control' %>
+    </div>
+    <% f.error_span(:memorando) %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :validade, :class => 'control-label col-lg-2' %>
+    <div class="col-md-2">
+     <%= f.datetime_local_field :validade, :class => 'form-control' %>
     </div>
     <% f.error_span(:validade) %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :rede_id, :class => 'control-label col-lg-2' %>
+    <div class="col-md-2">
+    <%= f.collection_select :rede_id, @redes, :id, :nome, {}, class:"form-control" %>
+    </div>
+    <% f.error_span(:rede_id) %>
   </div>
 
   <div class = "form-group">
