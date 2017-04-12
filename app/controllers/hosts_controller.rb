@@ -42,6 +42,7 @@ class HostsController < ApplicationController
     @host = Host.new(host_params)
     @horario = Time.zone.now - 10800
     respond_to do |format|
+      @host.usuario_alteracao = @current_user.id
       if @host.save
         format.html { redirect_to @host, notice: 'Host criado com sucesso!!' }
         format.json { render :show, status: :created, location: @host }
@@ -60,7 +61,7 @@ class HostsController < ApplicationController
     #  puts "***************"
     #  p host_params
     #  p @current_user
-    #  @host.usuario_alteracao = @current_user.id
+      @host.usuario_alteracao = @current_user.id
       if @host.update(host_params)
         format.html { redirect_to @host, notice: 'Host atualizado com sucesso' }
         format.json { render :show, status: :ok, location: @host }

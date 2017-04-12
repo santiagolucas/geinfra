@@ -33,26 +33,37 @@
 <table class="table table-hover">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:user_id) %></th>
-      <th><%= model_class.human_attribute_name(:host_id) %></th>
-      <th><%= model_class.human_attribute_name(:rede_id) %></th>
-      <th><%= model_class.human_attribute_name(:motivo) %></th>
-      <th><%= model_class.human_attribute_name(:nova_situacao) %></th>
-      <th><%= model_class.human_attribute_name(:novo_status) %></th>
-      <th><%= model_class.human_attribute_name(:descricao) %></th>
+      <td><strong>ID</strong></td>
+      <td><strong>Usuário</strong></td>
+      <td><strong>Validade atual</strong></td>
+      <td><strong>Validade antiga</strong></td>
+      <td><strong>Nome Novo</strong></td>
+      <td><strong>Nome Antigo</strong></td>
+      <td><strong>Nova Rede</strong></td>
+      <td><strong>Rede Antiga</strong></td>
+      <td><strong>Status antigo</strong></td>
+
 
     </tr>
   </thead>
   <tbody>
     <% @host_historico.each do |host_historico| %>
+    <% if host_historico.novo_ativo == true
+      @status = "Ativo"
+      else 
+      @status = "Inativo"
+      end %>
       <tr>
+        <td><%= host_historico.id %></td>
         <td><%= host_historico.user.nome %></td>
-        <td><%= host_historico.host.mac %></td>
-        <td><%= host_historico.rede.nome %></td>
-        <td><%= host_historico.motivo %></td>
-        <td><%= host_historico.nova_situacao_str %></td>
-        <td><%= host_historico.novo_status_str %></td>
-        <td><%= host_historico.descricao %></td>
+        <td><%= host_historico.nova_validade  %></td>
+        <td><%= host_historico.old_validade %></td>
+        <td><%= host_historico.nome %></td>
+        <td><%= host_historico.old_nome %></td>
+        <td><%= host_historico.nova_rede %></td>
+        <td><%= host_historico.old_rede %></td>
+        <td><%= @status %></td>
+
 
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),

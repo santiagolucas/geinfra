@@ -40,11 +40,23 @@
       <th><%= model_class.human_attribute_name(:rede_id) %></th>
       <th><%= model_class.human_attribute_name(:memorando) %></th>
       <th><%= model_class.human_attribute_name(:validade) %></th>
+      <th><strong>Ativo</strong></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
   <tbody>
     <% @hosts.each do |host| %>
+
+    <% if host.ativo == true
+          @ativo = "Sim"
+          else
+          @ativo = "Não"
+          end %>
+           <% if Time.now > host.validade 
+            flash[:info] = "Você tem hosts expirados !"
+           end %>
+
+
 
       <tr>
         <td><%= link_to host.id, host_path(host),class: 'btn btn-default btn-xs' %></td>
@@ -53,6 +65,8 @@
         <td><%= host.rede.nome %></td>
         <td><%= host.memorando %></td>
         <td><%= host.validade.strftime("%d/%m/%Y %H:%M") unless host.validade.nil?  %></td>
+        <td><%= @ativo %></td>
+        <td><%= @alerta %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_host_path(host), :class => 'btn btn-default btn-xs' %>

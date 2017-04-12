@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :audits
   get 'sessions/new'
   
   resources :sessions

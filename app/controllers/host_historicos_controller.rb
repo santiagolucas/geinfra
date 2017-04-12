@@ -39,7 +39,7 @@ class HostHistoricosController < ApplicationController
   # POST /host_historicos
   # POST /host_historicos.json
   def create
-        @host = Host.all
+    @host = Host.all
     @user = User.all
     @rede = Rede.all
     @host_historico = HostHistorico.new(host_historico_params)
