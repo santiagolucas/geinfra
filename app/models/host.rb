@@ -24,8 +24,8 @@ private
 		
 		
 		
-		historico.nova_rede = self.rede.id
-		historico.old_rede = self.rede.id_was
+		historico.nova_rede = self.rede.nome
+		historico.old_rede = self.rede.nome_was
 		
 		
 		
